@@ -5,20 +5,11 @@
 	"scripts": {
 		"build": "webpack",
 		"server": "webpack-dev-server",
-		"production": "set NODE_ENV=production && npm run clean && webpack"
+		"production": "set NODE_ENV=production && webpack"
 	},
 	"author": {
-		"name": "Rodrigo Hernando",
-		"url": "https://github.com/rhernandog",
-		"email": "rhernandog@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rhernandog/react-webpack-code-splitting.git"
-	},
-	"homepage": "",
-	"bugs": {
-		"url": "https://github.com/rhernandog/react-webpack-code-splitting/issues"
+		"name": "Robby Sahm",
+		"url": "https://github.com/robertSahm"
 	},
 	"license": "MIT",
 	"dependencies": {

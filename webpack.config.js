@@ -1,16 +1,16 @@
-var webpack = require("webpack");
-var path = require("path");
-var htmlPlugin = require("html-webpack-plugin");
+var webpack = require('webpack');
+var path = require('path');
+var htmlPlugin = require('html-webpack-plugin');
 var CleanObsolete = require('webpack-clean-obsolete-chunks');
 
-// HTML plugin config
+ // html plugin
 var myHtmlPlugin = new htmlPlugin({
-	template: "./src/template/index.html"
+	template: './src/template/index.html'
 });
 
 // commons chunk plugin
 var chunkPlugin = new webpack.optimize.CommonsChunkPlugin({
-	names: ["vendors", "manifest"]
+	names: ['vendors', 'manifest']
 });
 
 // set environment plugin
@@ -18,35 +18,35 @@ var setEnvPlugin = new webpack.DefinePlugin({
 	// node environment
 	 'process.env': {
 		NODE_ENV: JSON.stringify('production')
-	} 
+	}
 })
 
 // remove obsolete chunks after a re-compile while watching the files
-var removeObsolete = new CleanObsolete({verbose:true});
+var removeObsolete = new CleanObsolete({ verbose:true });
 
 const VENDORS = [
-	"react", "react-dom", "react-router-dom", "lodash"
+	'react', 'react-dom', 'react-router-dom', 'lodash'
 ];
 
 module.exports = {
 	entry: {
-		app: "./src/app.js",
+		app: './src/app.js',
 		vendors: VENDORS
 	},
 	output: {
 		// set the output path. absolute path relative to the system/server
 		// use node's path
-		path: path.join( __dirname, "build" ),
-		filename: "js/[name].[chunkhash].js",
-		publicPath: ""
+		path: path.join( __dirname, 'build' ),
+		filename: 'js/[name].[chunkhash].js',
+		publicPath: ''
 	},
-	devtool: "source-map",
+	devtool: 'source-map',
 	// loaders
 	module: {
 		rules: [
 			// babel
 			{
-				use: "babel-loader", 
+				use: 'babel-loader',
 				test: /\.js$/,
 				exclude: /node_modules/
 			},
@@ -57,10 +57,10 @@ module.exports = {
 				// then set them in the img folder
 				use: [
 					{
-						loader: "file-loader",
-						options: { name: "img/[name].[ext]" }
+						loader: 'file-loader',
+						options: { name: 'img/[name].[ext]' }
 					},
-					"image-webpack-loader"
+					'image-webpack-loader'
 				]
 			}
 		] // rules
@@ -74,9 +74,9 @@ module.exports = {
 	watch: true,
 	watchOptions: {
 		ignored: /node_modules/
-	},  
+	},
 	// set dev server to work with routes reloading
 	devServer: {
 		historyApiFallback: true
-	}, 
+	},
 };

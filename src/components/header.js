@@ -6,8 +6,8 @@ const CreateLink = (props) => {
 	return(
 		<Link
 			className="btn btn-primary"
-			replace={(()=>to===path)()}
-			to={to} style={{marginRight:"5px"}}
+			replace={( () => to === path )()}
+			to={to} style={{ marginRight:"5px" }}
 		>
 			{text}
 		</Link>

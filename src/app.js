@@ -6,15 +6,12 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/header";
 // get routes
 import Routes from "./routes";
-
+console.log('hello')
 const App = () =>
 	<Router>
 		<div className="row">
-			
 			<Route route="/" component={Header} />
-
 			<Routes />
-			
 		</div>
 	</Router>;
 

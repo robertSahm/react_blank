@@ -1,6 +1,53 @@
 webpackJsonp([4],{
 
-/***/ 224:
+/***/ 104:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(71);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactRouterDom = __webpack_require__(38);
+
+var _header = __webpack_require__(231);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _routes = __webpack_require__(232);
+
+var _routes2 = _interopRequireDefault(_routes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// get header
+console.log('hello');
+// get routes
+
+var App = function App() {
+	return _react2.default.createElement(
+		_reactRouterDom.BrowserRouter,
+		null,
+		_react2.default.createElement(
+			"div",
+			{ className: "row" },
+			_react2.default.createElement(_reactRouterDom.Route, { route: "/", component: _header2.default }),
+			_react2.default.createElement(_routes2.default, null)
+		)
+	);
+};
+
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("app"));
+
+/***/ }),
+
+/***/ 231:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,7 +61,7 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(37);
+var _reactRouterDom = __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -90,7 +137,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 225:
+/***/ 232:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108,9 +155,9 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(37);
+var _reactRouterDom = __webpack_require__(38);
 
-var _home = __webpack_require__(226);
+var _home = __webpack_require__(233);
 
 var _home2 = _interopRequireDefault(_home);
 
@@ -178,7 +225,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(2).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "contact"*/231));
+							resolve(__webpack_require__( /*webpackChunkName: "contact"*/238));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -187,7 +234,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(1).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "images"*/232));
+							resolve(__webpack_require__( /*webpackChunkName: "images"*/239));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -196,7 +243,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(0).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "contact"*/233));
+							resolve(__webpack_require__( /*webpackChunkName: "contact"*/240));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -208,7 +255,7 @@ exports.default = Routes;
 
 /***/ }),
 
-/***/ 226:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -276,53 +323,7 @@ var Home = function (_Component) {
 
 exports.default = Home;
 
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(6);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(68);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _reactRouterDom = __webpack_require__(37);
-
-var _header = __webpack_require__(224);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _routes = __webpack_require__(225);
-
-var _routes2 = _interopRequireDefault(_routes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// get header
-var App = function App() {
-	return _react2.default.createElement(
-		_reactRouterDom.BrowserRouter,
-		null,
-		_react2.default.createElement(
-			"div",
-			{ className: "row" },
-			_react2.default.createElement(_reactRouterDom.Route, { route: "/", component: _header2.default }),
-			_react2.default.createElement(_routes2.default, null)
-		)
-	);
-};
-// get routes
-
-
-_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("app"));
-
 /***/ })
 
-},[97]);
-//# sourceMappingURL=app.4703452748e64731e91c.js.map
+},[104]);
+//# sourceMappingURL=app.305d22b38ac2ec476c48.js.map
