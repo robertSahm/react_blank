@@ -1,0 +1,40 @@
+/*
+.responsive-text {
+  font-size-responsive: 12px 32px 480px 1280px
+}
+*/
+
+@import 'colors.css';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald';
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.text-wide {
+  letter-spacing: .17em;
+  padding: 0;
+  margin: 10px 0 8px;
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+
+  & .header-link {
+    margin: 5px auto 0;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+

@@ -1,0 +1,193 @@
+@import 'colors.css';
+
+.slick-loading .slick-list {
+  background: #fff center center no-repeat;
+}
+
+.slick-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 10000;
+  margin: 0 5px;
+
+  & img {
+    cursor: pointer;
+    width: 70%;
+    opacity: .75;
+  }
+}
+
+ul.slick-dots {
+  /* width: 20%; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  float: left;
+
+  & li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    /* border: 1px solid grey; */
+
+    & button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      padding: 5px 0 0 0;
+      margin: 0 auto;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+
+.slick-prev img {
+  /* float: left; */
+}
+
+/* .slider-nav {
+  height: 30px;
+  width: 60px;
+  margin-top: 50px;
+} */
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+/*   color: transparent;
+  outline: none;
+  background: transparent; */
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 2em;
+}
+
+//////////////////
+// dots
+//////////////////
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: .5;
+  color: var(--blue);
+}
+
+.slick-dots li button:before {
+  font-size: 1.75rem;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--blue);
+}
+
+/////////////////////////////////////////////////////////////////////
+/*  */
+
+.slick-slide img { // actual images
+  display: block;
+  margin: auto;
+}
+
+.slick-slide img.slick-loading {
+  border: 0
+}
+
+.slick-slider {
+  margin: 0 auto;
+}
+
+.slick-thumb {
+  bottom: -45px;
+
+  li {
+    width: 60px;
+    height: 45px;
+
+    img {
+      filter: grayscale(100%);
+    }
+
+    &.slick-active {
+      img {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+  .center {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .center .slick-center h3 {
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .center h3 {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 300ms ease;
+  }
+}
+// just like in the regular library, we cannot simply have a vertical
+// slider fill available space like in the horizontal case
+//
+// we have to therefore set the height of a slide in a vertical slider
+// explicitly in CSS or otherwise
+.slick-vertical .slick-slide {
+  height: 180px;
+}
+

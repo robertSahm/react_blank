@@ -1,20 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import './styles/style.css'
+import './styles/typography.css'
+import './styles/header.css'
+import './styles/nav.css'
 
 // get header
-import Header from "./components/header";
+import Header from './components/header'
+// get nav
+import Nav from './components/nav'
 // get routes
-import Routes from "./routes";
-console.log('hello')
+import Routes from './routes'
+
+
 const App = () =>
 	<Router>
-		<div className="row">
-			<Route route="/" component={Header} />
+		<div>
+      <Header />
+			<Route route="/" component={Nav} />
 			<Routes />
 		</div>
 	</Router>;
 
 ReactDOM.render(
 	<App />, document.getElementById("app")
-);
+)

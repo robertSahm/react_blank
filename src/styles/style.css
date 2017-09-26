@@ -1,0 +1,14 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.hand-line {
+  margin: 8px auto 80px;
+  opacity: 1;
+  display: block;
+}

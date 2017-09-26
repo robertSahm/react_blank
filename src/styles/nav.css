@@ -1,0 +1,73 @@
+@import 'colors.css';
+
+.nav-wrap {
+  font-family: 'Oswald';
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 25px;
+  position: relative;
+
+  & .link-wrap {
+    width: 130px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 15px;
+    letter-spacing: .1em;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  & .dropdown-wrap {
+    z-index: 99999;
+    position: absolute;
+    top: 30px;
+
+    & .dropdown {
+      background-color: white;
+      padding: 12px 20px;
+
+      & a {
+        display: block;
+        padding: 3px 0;
+        font-size: .9em;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.transition-span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.dropmenu-enter {
+  opacity: 0.01;
+}
+
+.dropmenu-enter.dropmenu-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.dropmenu-leave {
+  opacity: 1;
+}
+
+.dropmenu-leave.dropmenu-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease;
+}
+
+
+
