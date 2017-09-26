@@ -6,7 +6,7 @@
     "clean": "rimraf build",
     "build": "npm run clean && webpack",
     "server": "webpack-dev-server",
-    "production": "set NODE_ENV=production && webpack"
+    "production": "NODE_ENV=production node server.js"
   },
   "author": {
     "name": "Robby Sahm",
