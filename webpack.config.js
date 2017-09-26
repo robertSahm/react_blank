@@ -14,12 +14,12 @@ var chunkPlugin = new webpack.optimize.CommonsChunkPlugin({
 });
 
 // set environment plugin
-var setEnvPlugin = new webpack.DefinePlugin({
-	// node environment
-	 'process.env': {
-		NODE_ENV: JSON.stringify('production')
-	}
-})
+// var setEnvPlugin = new webpack.DefinePlugin({
+// 	// node environment
+// 	 'process.env': {
+// 		NODE_ENV: JSON.stringify('production')
+// 	}
+// })
 
 // remove obsolete chunks after a re-compile while watching the files
 var removeObsolete = new CleanObsolete({ verbose: false });

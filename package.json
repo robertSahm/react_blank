@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "express": "^4.15.5",
     "lodash": "^4.17.4",
     "postcss-responsive-font": "^1.0.3",
     "postcss-simple-vars": "^4.1.0",
@@ -48,6 +49,7 @@
     "sugarss": "^1.0.0",
     "webpack": "^3.4.1",
     "webpack-clean-obsolete-chunks": "^0.2.0",
+    "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.6.1"
   }
 }
