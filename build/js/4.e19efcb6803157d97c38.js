@@ -1,6 +1,6 @@
-webpackJsonp([3],{
+webpackJsonp([4],{
 
-/***/ 650:
+/***/ 668:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,34 +14,25 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _image = __webpack_require__(651);
-
-var _image2 = _interopRequireDefault(_image);
+var _reactRouterDom = __webpack_require__(32);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Contact = function Contact() {
+var Accessories = function Accessories() {
 	return _react2.default.createElement(
 		"div",
 		{ className: "col-12" },
 		_react2.default.createElement(
 			"h3",
 			{ className: "text-center" },
-			"CONTACT"
+			"Accessories"
 		)
 	);
 };
 
-exports.default = Contact;
-
-/***/ }),
-
-/***/ 651:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/18adbd4ef49a1ea483189fe5bb407135.jpg";
+exports.default = Accessories;
 
 /***/ })
 
 });
-//# sourceMappingURL=3.9eb713d586da830f7b29.js.map
+//# sourceMappingURL=4.e19efcb6803157d97c38.js.map
