@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var defaultProps = {
     className: '',
-    accessibility: true,
+    accessibility: false,
     adaptiveHeight: false,
     arrows: true,
     autoplay: false,

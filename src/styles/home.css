@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-body {
+
+
+html, body {
   padding: 0;
   margin: 0;
 }
@@ -24,12 +26,6 @@ body {
 
   & .address-box {
     width: 20%;
-
-    & .box-text {
-      font-family: Oswald;
-      line-height: 0;
-      font-weight: 600;
-    }
   }
 }
 

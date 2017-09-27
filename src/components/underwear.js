@@ -5,10 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Underwear = () =>
 	<div className="col-12">
-		<h3 className="text-center">Underwera</h3>
-		<div className="col-12 col-md-4">
-			<img className="img-fluid rounded" src={img1} alt="" />
-		</div>
+		<h3 className="text-center">Underwear</h3>
 	</div>;
 
 export default Underwear;

@@ -38,7 +38,8 @@ a {
   }
 }
 
-.address-box {
+.address-box,
+.footer-addres-row .address-box {
   & .text-gold,
   & .text-gray,
   & .text-blue,
@@ -47,7 +48,7 @@ a {
   & .text-light-green,
   & .text-dark-green {
     font-family: 'Oswald';
-    line-height: 0;
+    line-height: 0.1px;
   }
 }
 

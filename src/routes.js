@@ -55,7 +55,7 @@ const Routes = () =>
 		<Route path="/accessories"
 			component={
 				props =>
-					<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "accessories"*/"./components/lounge")} />
+					<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "accessories"*/"./components/accessories")} />
 			}
 		/>
 

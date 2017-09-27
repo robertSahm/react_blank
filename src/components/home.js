@@ -1,20 +1,31 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Textfit } from 'react-textfit'
+import Slider from './react-slick/lib/index'
 import GoogleMap from './googlemap'
 import Footer from './footer'
 
-import Slider from './react-slick/lib/index'
 import '../styles/slick.css'
 import '../styles/slick-theme.css'
-// images
 import ArrowLeft from '../img/arrow-left.svg'
 import ArrowRight from '../img/arrow-right.svg'
 import HandLine from '../img/hand-line.svg'
 import LogoFull from '../img/LogoFull.svg'
-import Graham_1 from '../img/underwear/hanro_gray_fade.jpg'
-import Hanro_1 from '../img/underwear/Robert_Graham_stage_1.jpg'
+
+// Slider Images
+  // Underwear
+import Graham_1 from '../img/underwear/Robert_Graham_stage_1.jpg'
+import Hanro_1 from '../img/underwear/hanro_1.jpg'
 import Hom_1 from '../img/underwear/hom_closet.jpg'
+import Wood_1 from '../img/underwear/wood_1.jpg'
+import Undr_1 from '../img/underwear/2undr_1.jpg'
+import Tani_1 from '../img/underwear/tani_1.jpg'
+
+  // Sleep and Loungewear
+
+  // Socks
+
+  // Travel Accessories
 
 
 const CreateLink = (props) => {
@@ -59,11 +70,14 @@ const Home = (props) => {
 
   const settings = {
     dots: true,
+    variableWidth: true,
+    centerMode: false,
     infinite: false,
-    speed: 200,
+    autoPlay: true,
     slidesToShow: 1, //Number of slides to scroll for each navigation item
     slidesToScroll: 1, // Number of slides to be visible at a time
-    variableWidth: true,
+    initialSlide: 0,
+    speed: 400,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -73,42 +87,29 @@ const Home = (props) => {
     <div className='content-home'>
 
       <Slider {...settings}>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
+        <img src={Hom_1} />
+        <img src={Wood_1} />
+        <img src={Hanro_1} />
+        <img src={Undr_1} />
+        <img src={Tani_1} />
       </Slider>
       <CreateLink path={pathname} to='/contact' text='MORE UNDERWEAR' />
 
       <Slider {...settings}>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
+        <img src={Graham_1} />
+
       </Slider>
       <CreateLink path={pathname} to='/contact' text='MORE LOUNGEWEAR AND SLEEPWEAR' />
 
       <Slider {...settings}>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
+        <img src={Graham_1} />
+
       </Slider>
       <CreateLink path={pathname} to='/contact' text='MORE SOCKS' />
 
       <Slider {...settings}>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
-        <div><img src={Graham_1} /></div>
-        <div><img src={Hanro_1} /></div>
-        <div><img src={Hom_1} /></div>
+        <img src={Graham_1} />
+
       </Slider>
       <CreateLink path={pathname} to='/contact' text='MORE TRAVEL ACCESSORIES' />
 

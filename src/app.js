@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import './styles/style.css'
+import './styles/home.css'
 import './styles/typography.css'
 import './styles/header.css'
 import './styles/nav.css'
