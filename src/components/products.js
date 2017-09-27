@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../img/image-1.jpg";
 
 const Products = () =>
 	<div className="col-12">

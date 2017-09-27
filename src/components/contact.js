@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../img/image-1.jpg";
 
 const Contact = () =>
 	<div className="col-12">
