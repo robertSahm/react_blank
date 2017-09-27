@@ -12,3 +12,26 @@ body {
   opacity: 1;
   display: block;
 }
+
+.address-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & .map-wrap {
+    width: 75%;
+  }
+
+  & .address-box {
+    width: 20%;
+
+    & .box-text {
+      font-family: Oswald;
+      line-height: 0;
+      font-weight: 600;
+    }
+  }
+}
+
+
+

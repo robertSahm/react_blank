@@ -38,3 +38,59 @@ a {
   }
 }
 
+.address-box {
+  & .text-gold,
+  & .text-gray,
+  & .text-blue,
+  & .text-light-brown,
+  & .text-dark-brown,
+  & .text-light-green,
+  & .text-dark-green {
+    font-family: 'Oswald';
+    line-height: 0;
+  }
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-light-brown {
+  color: var(--light-brown);
+}
+
+.text-dark-brown {
+  color: var(--dark-brown);
+}
+
+.text-light-green {
+  color: var(--light-green);
+}
+
+.text-dark-green {
+  color: var(--dark-green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
