@@ -6,9 +6,9 @@ import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
 import demoFancyMapStyles from "./demoFancyMapStyles.json";
 
-const StyledMapWithAnInfoBox = compose(
+const StyledMapWithAnInfoBox = compose (
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAVu4du-oZNQCxxpZnkfx8YKDo9zSu4WvU&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `415px` }} />,
     mapElement: <div style={{ height: `100%` }} />,
