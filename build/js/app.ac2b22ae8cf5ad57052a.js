@@ -19863,7 +19863,7 @@ var _demoFancyMapStyles2 = _interopRequireDefault(_demoFancyMapStyles);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var StyledMapWithAnInfoBox = (0, _recompose.compose)((0, _recompose.withProps)({
-  googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+  googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAVu4du-oZNQCxxpZnkfx8YKDo9zSu4WvU&libraries=geometry,drawing,places",
   loadingElement: _react2.default.createElement('div', { style: { height: '100%' } }),
   containerElement: _react2.default.createElement('div', { style: { height: '415px' } }),
   mapElement: _react2.default.createElement('div', { style: { height: '100%' } }),
@@ -32437,4 +32437,4 @@ module.exports = __webpack_require__.p + "img/a061d67d34b05b86f9b9090614736692.j
 
 /***/ })
 ],[245]);
-//# sourceMappingURL=app.3932641149b4935da3e3.js.map
+//# sourceMappingURL=app.ac2b22ae8cf5ad57052a.js.map
