@@ -90,9 +90,8 @@ const Home = (props) => {
   const settings = {
     dots: true,
     variableWidth: true,
+    infinite: true,
     centerMode: false,
-    infinite: false,
-    autoPlay: true,
     slidesToShow: 1, //Number of slides to scroll for each navigation item
     slidesToScroll: 1, // Number of slides to be visible at a time
     initialSlide: 0,
@@ -165,7 +164,7 @@ const Home = (props) => {
         </div>
 
         <div className="map-wrap">
-          <GoogleMap />
+          {/*<GoogleMap />*/}
         </div>
       </div>
 

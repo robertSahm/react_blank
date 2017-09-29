@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Route } from "react-router-dom"
-import Home from "./components/home"
+import Home from "./components/home2"
 
 class LoadingComponent extends Component {
 	constructor(props) {
