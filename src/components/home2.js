@@ -64,6 +64,7 @@ class Home extends Component {
 
     return (
       <div className='content-home'>
+
         <div className="carousel-wrapper">
           <Carousel {...settings}>
             <img src={Spanx1} />
@@ -74,7 +75,8 @@ class Home extends Component {
           </Carousel>
           <CreateLink path={pathname} to='/underwear' text='UNDERWEAR' />
         </div>
-        <div className="carousel-wrapper margins">
+
+        <div className="carousel-wrapper edge-pad">
           <Carousel {...settings}>
             <img src={DR_3} />
             <img src={UndrLifestyle1} />
@@ -84,24 +86,58 @@ class Home extends Component {
           </Carousel>
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
-        <div className="carousel-wrapper third">
-          <Carousel {...settings}>
-            <img src={Falke1} />
-            <img src={Falke2} />
-            <img src={Falke3} />
-            <img src={Falke5} />
-          </Carousel>
-          <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+
+        <div className={'row edge-pad'}>
+          <div className="carousel-wrapper half">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke5} />
+            </Carousel>
+            <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+          </div>
+          <div className="carousel-wrapper half">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke5} />
+            </Carousel>
+            <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+          </div>
         </div>
-        <div className="carousel-wrapper third">
-          <Carousel {...settings}>
-            <img src={Falke1} />
-            <img src={Falke2} />
-            <img src={Falke3} />
-            <img src={Falke5} />
-          </Carousel>
-          <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+
+        <div className={'row edge-pad'}>
+          <div className="carousel-wrapper third">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke5} />
+            </Carousel>
+            <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+          </div>
+          <div className="carousel-wrapper third">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke5} />
+            </Carousel>
+            <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+          </div>
+          <div className="carousel-wrapper third">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke5} />
+            </Carousel>
+            <CreateLink path={pathname} to='/loungewear' text='SOCKS' />
+          </div>
         </div>
+
       </div>
     )
   }

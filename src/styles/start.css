@@ -32,5 +32,12 @@ ul {
   }
 }
 
+.row {
+  lost-utility: clearfix;
+}
+
+.edge-pad {
+  margin: 0 3%;
+}
 
 
