@@ -16,13 +16,14 @@
   "dependencies": {
     "express": "^4.15.5",
     "lodash": "^4.17.4",
+    "nuka-carousel": "^2.3.0",
     "postcss-responsive-font": "^1.0.3",
     "postcss-simple-vars": "^4.1.0",
     "react": "^15.6.1",
     "react-burger-menu": "^2.1.6",
-    "react-carousel": "^4.2.2",
     "react-dom": "^15.6.1",
     "react-google-maps": "^8.3.0",
+    "react-responsive-carousel": "^3.1.27",
     "react-router-dom": "^4.1.2",
     "react-textfit": "^1.0.1",
     "react-transition-group": "^1.2.0"
@@ -33,6 +34,7 @@
     "babel-plugin-dynamic-import-webpack": "^1.0.1",
     "babel-plugin-syntax-class-properties": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
