@@ -1,8 +1,67 @@
 @import 'colors.css';
 
+:root {
+  @custom-media --100up (width >= 1200px);
+}
+
+.carousel-wrapper {
+
+  &.margins {
+    margin: 0 3%;
+  }
+
+  &.third {
+    margin: 0 1.5%;
+    width: 30%;
+
+    @media (--1200up) {
+      border: 3px solid red;
+    }
+
+    & .hand-line {
+      margin: 8px auto 30px;
+    }
+
+    & img {
+      max-width: 200px;
+      height: auto;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &.half {
+    margin-left: 3%;
+    width: 50%;
+
+    @media (--1200up) {
+      border: 3px solid red;
+    }
+
+    & .hand-line {
+      margin: 8px auto 30px;
+    }
+
+    & img {
+      max-width: 200px;
+      height: auto;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  & .hand-line {
+    margin: 8px auto 80px;
+    display: block;
+  }
+}
+
 .carousel {
   display: flex;
   flex-wrap: wrap;
+
 
   & * {
     margin: 0;
@@ -21,6 +80,7 @@
     transition: height 0.15s ease-in;
 
     & ul.slider {
+      /* list-style-type: none; */
       display: flex;
 
       & .slide {
@@ -45,76 +105,66 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-content: center;
+    margin-top: 15px;
 
     & .control-arrow {
-      border: 1px solid red;
+      transition: opacity 0.25s ease;
+      border: 0;
+      cursor: pointer;
       outline: none;
+      display: block;
+      width: 20px;
+      height: 25px;
+      margin: 0 15px;
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.control-disabled  {
+        opacity: .2;
+      }
     }
 
     & .control-prev {
-      border: 0;
-      width: 53px;
-      height: 23px;
-      background: url(../img/arrow-left.svg) bottom center no-repeat;
+      background: url(../img/arrow-left.svg) right center no-repeat;
     }
 
     & .control-next {
-      border: 0;
-      width: 53px;
-      height: 23px;
-      background: url(../img/arrow-right.svg) bottom center  no-repeat;
+      background: url(../img/arrow-right.svg) left center no-repeat;
     }
 
     /* Dots */
     & .control-dots {
-      text-align: center;
-      padding-top: 3px;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       & .dot {
         transition: opacity 0.25s ease;
-        opacity: 1;
-        border: 1px solid var(--gray);
-        border-radius: 50%;
+        box-sizing: content-box;
+        opacity: .5;
+        background: url(../img/dot.svg) left center  no-repeat;
         width: 12px;
         height: 12px;
-        cursor: pointer;
-        display: inline-block;
         margin: 0 7px;
+        padding: 2px;
+        cursor: pointer;
 
         &:hover {
-          opacity: .3;
-          background-color: var(--gray);
+          opacity: 1;
         }
 
         &.selected {
+          background: url(../img/dot-blue.svg) left center  no-repeat;
           opacity: 1;
-          background-color: var(--blue);
           border: 0;
         }
       }
     }
   }
-
-
-  /* Arrows -------------------------------------- */
-  & .control-arrow {
-/*  transition: all 0.25s ease-in;
-    opacity: .5;
-    z-index: 2;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
- */
-    &:hover {
-      opacity: 1;
-    }
-  }
-
 }
 
-@media (min-width:960px) {
-  .carousel .control-dots {
-    /* bottom: 0; */
-  }
-}

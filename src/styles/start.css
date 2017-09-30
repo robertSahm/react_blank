@@ -2,17 +2,20 @@
   box-sizing: border-box;
 }
 
-
-
 html, body {
   padding: 0;
   margin: 0;
 }
 
-.hand-line {
-  margin: 8px auto 80px;
-  opacity: 1;
-  display: block;
+@media (min-width:1200px) {
+  .body {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+ul {
+  list-style-type: none;
 }
 
 .address-row {
