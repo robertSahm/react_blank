@@ -145,3 +145,17 @@
   }
 }
 
+.logo-carousel {
+  display: block;
+  width: 75%;
+
+  margin: 0 auto;
+
+  & img {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 25px auto;
+  }
+}
+
