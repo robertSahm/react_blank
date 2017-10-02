@@ -14,6 +14,7 @@ import styles from '../styles/carousel.css'
 import ArrowLeft from '../img/arrow-left.svg'
 import ArrowRight from '../img/arrow-right.svg'
 import HandLine from '../img/hand-line.svg'
+import Line from '../img/line.svg'
 
   // Underwear
 import Graham1 from '../img/underwear/Robert_Graham_stage_1.jpg'
@@ -100,9 +101,11 @@ class Home extends Component {
           <img src={LogoRow3} />
           <img src={LogoRow4} />
         </div>
+
         <div className={'row'}>
-          <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
+          <img className={'line'} src={Line} />
         </div>
+
         <div className={'address-row'}>
 
           <div className={'address-box'}>
@@ -127,7 +130,9 @@ class Home extends Component {
           <div className="map-wrap">
             <GoogleMap />
           </div>
+
         </div>
+
         <Footer />
       </div>
     )
