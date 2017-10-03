@@ -40,6 +40,16 @@ import Falke3 from '../img/socks/falke_3.jpg'
 import Falke4 from '../img/socks/falke_4.jpg'
 import Falke5 from '../img/socks/falke_5.jpg'
 
+  // Travel Accessories
+import Ettinger1 from '../img/accessories/ettinger_box_1.jpg'
+import Ettinger2 from '../img/accessories/ettinger_canteen_1.jpg'
+import Ettinger3 from '../img/accessories/ettinger_duffel_1.jpg'
+import Ettinger4 from '../img/accessories/ettinger_keychain_1.jpg'
+import Ettinger5 from '../img/accessories/ettinger_passport_1.jpg'
+import HookAndAlbert1 from '../img/accessories/hookandalbert_briefcase_1.jpg'
+import HookAndAlbert2 from '../img/accessories/hookandalbert_duffel_2.jpg'
+import HookAndAlbert3 from '../img/accessories/hookandalbert_duffel_3.jpg'
+
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
 import LogoRow2 from '../img/logos/logo-row-2.png'
@@ -75,8 +85,6 @@ class Home extends Component {
     return (
       <div className='content-home'>
 
-        <InstafeedComponent />
-
         <div className="carousel-wrapper">
           <Carousel {...settings}>
             <img src={Spanx1} />
@@ -99,11 +107,11 @@ class Home extends Component {
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
 
-        <div className={'row row-grid edge-pad'}>
+        <div className={'row'}>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
-              <img src={Falke1} />
               <img src={Falke2} />
+              <img src={Falke1} />
               <img src={Falke3} />
               <img src={Falke4} />
             </Carousel>
@@ -111,10 +119,11 @@ class Home extends Component {
           </div>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
-              <img src={Falke1} />
-              <img src={Falke2} />
-              <img src={Falke3} />
-              <img src={Falke4} />
+              <img src={Ettinger2} />
+              <img src={Ettinger1} />
+              <img src={Ettinger3} />
+              <img src={Ettinger4} />
+              <img src={Ettinger5} />
             </Carousel>
             <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
           </div>
@@ -127,6 +136,10 @@ class Home extends Component {
           <img src={LogoRow4} />
         </div>
 
+        <div className={'row'}>
+          <img className={'line'} src={Line} />
+        </div>
+        <InstafeedComponent />
         <div className={'row'}>
           <img className={'line'} src={Line} />
         </div>
@@ -166,3 +179,5 @@ class Home extends Component {
 }
 
 export default Home
+
+

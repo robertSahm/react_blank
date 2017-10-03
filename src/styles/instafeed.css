@@ -1,0 +1,38 @@
+@import 'colors.css';
+
+.insta-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .insta-logo {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  & .insta-header-text {
+    text-align: center;
+    font-weight: 200;
+    display: inline-block;
+    color: var(--gray);
+    letter-spacing: .07rem;
+  }
+}
+
+#instafeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  & .post {
+      width: 200px;
+      padding: 3px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

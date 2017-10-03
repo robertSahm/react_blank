@@ -1,9 +1,10 @@
 var webpack = require("webpack");
 var path = require("path");
 var htmlPlugin = require("html-webpack-plugin");
-var CleanObsolete = require('webpack-clean-obsolete-chunks');
+var CleanObsolete = require("webpack-clean-obsolete-chunks");
 
 // HTML plugin config
+
 var myHtmlPlugin = new htmlPlugin({
 	template: "./src/template/index.html"
 });
