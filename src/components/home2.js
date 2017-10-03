@@ -129,6 +129,11 @@ class Home extends Component {
           </div>
         </div>
 
+        <InstafeedComponent />
+        <div className={'row'}>
+          <img className={'line'} src={Line} />
+        </div>
+
         <div className="carousel-wrapper logo-carousel edge-pad">
           <img src={LogoRow1} />
           <img src={LogoRow2} />
@@ -139,13 +144,8 @@ class Home extends Component {
         <div className={'row'}>
           <img className={'line'} src={Line} />
         </div>
-        <InstafeedComponent />
-        <div className={'row'}>
-          <img className={'line'} src={Line} />
-        </div>
 
-
-{/*        <div className={'address-row'}>
+        <div className={'address-row'}>
 
           <div className={'address-box'}>
             <Textfit mode="single">
@@ -170,7 +170,7 @@ class Home extends Component {
             <GoogleMap />
           </div>
 
-        </div>*/}
+        </div>
 
         <Footer />
       </div>
