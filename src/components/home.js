@@ -46,7 +46,6 @@ import HookAndAlbert1 from '../img/accessories/hookandalbert_briefcase_1.jpg'
 import HookAndAlbert2 from '../img/accessories/hookandalbert_duffel_2.jpg'
 import HookAndAlbert3 from '../img/accessories/hookandalbert_duffel_3.jpg'
 
-
 const CreateLink = (props) => {
   const {path, to, text} = props;
   return (

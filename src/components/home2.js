@@ -46,6 +46,7 @@ import LogoRow2 from '../img/logos/logo-row-2.png'
 import LogoRow3 from '../img/logos/logo-row-3.png'
 import LogoRow4 from '../img/logos/logo-row-4.png'
 
+import InstafeedComponent from './instafeed'
 
 const CreateLink = (props) => {
   const {path, to, text} = props;
@@ -60,6 +61,7 @@ const CreateLink = (props) => {
   );
 };
 
+
 class Home extends Component {
   render() {
     const settings = {
@@ -72,6 +74,8 @@ class Home extends Component {
 
     return (
       <div className='content-home'>
+
+        <InstafeedComponent />
 
         <div className="carousel-wrapper">
           <Carousel {...settings}>
@@ -95,6 +99,27 @@ class Home extends Component {
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
 
+        <div className={'row row-grid edge-pad'}>
+          <div className="carousel-wrapper half small-img">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke4} />
+            </Carousel>
+            <CreateLink path={pathname} to='/socks' text='SOCKS' />
+          </div>
+          <div className="carousel-wrapper half small-img">
+            <Carousel {...settings}>
+              <img src={Falke1} />
+              <img src={Falke2} />
+              <img src={Falke3} />
+              <img src={Falke4} />
+            </Carousel>
+            <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
+          </div>
+        </div>
+
         <div className="carousel-wrapper logo-carousel edge-pad">
           <img src={LogoRow1} />
           <img src={LogoRow2} />
@@ -106,7 +131,8 @@ class Home extends Component {
           <img className={'line'} src={Line} />
         </div>
 
-        <div className={'address-row'}>
+
+{/*        <div className={'address-row'}>
 
           <div className={'address-box'}>
             <Textfit mode="single">
@@ -131,7 +157,7 @@ class Home extends Component {
             <GoogleMap />
           </div>
 
-        </div>
+        </div>*/}
 
         <Footer />
       </div>

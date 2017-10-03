@@ -4,24 +4,29 @@
   @custom-media --1200up (width >= 1200px);
 }
 
+
 .carousel-wrapper {
 
   &.third {
     lost-column: 1/3;
-
-    & img {
-      max-width: 200px;
-      height: auto;
-      width: auto;
-      display: block;
-      margin: 0 auto;
-    }
   }
 
   &.half {
     lost-column: 1/2;
-  }
 
+    &.small-img img {
+      max-width: 400px;
+    }
+  }
+}
+
+.row-grid {
+  width: 80%;
+  margin: 0 auto;
+
+  & .hand-line {
+    width: 100%;
+  }
 }
 
 .carousel {
@@ -45,7 +50,6 @@
     transition: height 0.15s ease-in;
 
     & ul.slider {
-      /* list-style-type: none; */
       display: flex;
 
       & .slide {
@@ -103,7 +107,6 @@
 
     /* Dots */
     & .control-dots {
-      list-style-type: none;
       display: flex;
       justify-content: center;
       align-items: center;
