@@ -56,6 +56,7 @@ import LogoRow2 from '../img/logos/logo-row-2.png'
 import LogoRow3 from '../img/logos/logo-row-3.png'
 import LogoRow4 from '../img/logos/logo-row-4.png'
 
+import StoreShot from '../img/store-shot.jpg'
 import InstafeedComponent from './instafeed'
 
 const CreateLink = (props) => {
@@ -146,30 +147,32 @@ class Home extends Component {
         </div>
 
         <div className={'address-row'}>
-
           <div className={'address-box'}>
             <Textfit mode="single">
-              <span className={'text-gold'}>3276 M ST NW</span>
+              <span className={'text-gold'}>3109 M ST NW</span>
             </Textfit>
             <Textfit mode="single">
               <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
             </Textfit>
             <Textfit mode="single">
-               <span className={'text-light-green'}>(202) 342-2500</span>
+               <span className={'text-light-green'}>(202) 333-4213</span>
              </Textfit>
             <Textfit mode="single">
-               <span className={'text-dark-green'}>MON-FRI 10am - 6pm</span>
+               <span className={'text-dark-green'}>MON-TH 10am - 7:30pm</span>
+             </Textfit>
+             <Textfit mode="single">
+               <span className={'text-dark-brown lighten'}>FRI-SAT 10am - 8:30pm</span>
              </Textfit>
             <Textfit mode="single">
-              <span className={'text-dark-brown'}>SAT-SUN 10am - 9pm</span>
+              <span className={'text-dark-brown'}>SUNDAY 11am - 6pm</span>
             </Textfit>
           </div>
-
-
           <div className="map-wrap">
             <GoogleMap />
           </div>
-
+        </div>
+        <div className={'row store-shot-wrap'}>
+          <img src={StoreShot} />
         </div>
 
         <Footer />

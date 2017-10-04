@@ -48,7 +48,7 @@ a {
   & .text-light-green,
   & .text-dark-green {
     font-family: 'Oswald';
-    line-height: 0.1px;
+    line-height: 0;
   }
 }
 
@@ -70,6 +70,10 @@ a {
 
 .text-dark-brown {
   color: var(--dark-brown);
+
+  &.lighten {
+    color: color(var(--dark-brown) b(55%));
+  }
 }
 
 .text-light-green {
