@@ -1,6 +1,6 @@
-webpackJsonp([1],{
+webpackJsonp([4],{
 
-/***/ 675:
+/***/ 677:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,21 +18,21 @@ var _reactRouterDom = __webpack_require__(32);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Socks = function Socks() {
+var Accessories = function Accessories() {
 	return _react2.default.createElement(
 		"div",
 		{ className: "col-12" },
 		_react2.default.createElement(
 			"h3",
 			{ className: "text-center" },
-			"Socks"
+			"Accessories"
 		)
 	);
 };
 
-exports.default = Socks;
+exports.default = Accessories;
 
 /***/ })
 
 });
-//# sourceMappingURL=1.a2520a117e0b78608480.js.map
+//# sourceMappingURL=4.6aa01e0978422271219b.js.map

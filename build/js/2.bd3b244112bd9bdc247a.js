@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 674:
+/***/ 675:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35,4 +35,4 @@ exports.default = Lounge;
 /***/ })
 
 });
-//# sourceMappingURL=2.a1de0f91e3db461fd177.js.map
+//# sourceMappingURL=2.bd3b244112bd9bdc247a.js.map

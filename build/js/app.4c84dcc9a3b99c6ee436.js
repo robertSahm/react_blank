@@ -6743,7 +6743,7 @@ exports = module.exports = __webpack_require__(35)(undefined);
 
 
 // module
-exports.push([module.i, "*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body,html{padding:0;margin:0}@media (min-width:1200px){.body{margin:0 auto;max-width:1200px}}ul{list-style-type:none}.address-row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:60px}.address-row .map-wrap{width:75%}.address-row .address-box{width:20%}.row:before{content:'';display:table}.row:after{content:'';display:table;clear:both}.edge-pad{margin:0 3%}", ""]);
+exports.push([module.i, "*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body,html{padding:0;margin:0}@media (min-width:1200px){body{margin:0 auto;max-width:1200px}}ul{list-style-type:none}.address-row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px}.address-row .map-wrap{width:75%}.address-row .address-box{width:20%}.row:before{content:'';display:table}.row:after{content:'';display:table;clear:both}.edge-pad{margin:0 3%}.store-shot-wrap{margin-top:20px}.store-shot-wrap img{min-width:100%}", ""]);
 
 // exports
 
@@ -6852,7 +6852,7 @@ exports = module.exports = __webpack_require__(35)(undefined);
 
 
 // module
-exports.push([module.i, "h1,h2,h3,h4,h5,h6{font-family:Oswald;font-weight:400}.text-center{text-align:center}.text-light{font-weight:200}.text-wide{letter-spacing:.17em;padding:0;margin:10px 0 8px;color:#989898}a{text-decoration:none}a .header-link{margin:5px auto 0}a .header-link:hover{color:#0079cd}.address-box .text-blue,.address-box .text-dark-brown,.address-box .text-dark-green,.address-box .text-gold,.address-box .text-gray,.address-box .text-light-brown,.address-box .text-light-green,.footer-addres-row .address-box .text-blue,.footer-addres-row .address-box .text-dark-brown,.footer-addres-row .address-box .text-dark-green,.footer-addres-row .address-box .text-gold,.footer-addres-row .address-box .text-gray,.footer-addres-row .address-box .text-light-brown,.footer-addres-row .address-box .text-light-green{font-family:Oswald;line-height:.1px}.text-gold{color:#fdce1e}.text-gray{color:#989898}.text-blue{color:#0079cd}.text-light-brown{color:#b18d00}.text-dark-brown{color:#3e3202}.text-light-green{color:#caca00}.text-dark-green{color:#979749}", ""]);
+exports.push([module.i, "h1,h2,h3,h4,h5,h6{font-family:Oswald;font-weight:400}.text-center{text-align:center}.text-light{font-weight:200}.text-wide{letter-spacing:.17em;padding:0;margin:10px 0 8px;color:#989898}a{text-decoration:none}a .header-link{margin:5px auto 0}a .header-link:hover{color:#0079cd}.address-box .text-blue,.address-box .text-dark-brown,.address-box .text-dark-green,.address-box .text-gold,.address-box .text-gray,.address-box .text-light-brown,.address-box .text-light-green,.footer-addres-row .address-box .text-blue,.footer-addres-row .address-box .text-dark-brown,.footer-addres-row .address-box .text-dark-green,.footer-addres-row .address-box .text-gold,.footer-addres-row .address-box .text-gray,.footer-addres-row .address-box .text-light-brown,.footer-addres-row .address-box .text-light-green{font-family:Oswald;line-height:0}.text-gold{color:#fdce1e}.text-gray{color:#989898}.text-blue{color:#0079cd}.text-light-brown{color:#b18d00}.text-dark-brown{color:#3e3202}.text-dark-brown.lighten{color:#735c03}.text-light-green{color:#caca00}.text-dark-green{color:#979749}", ""]);
 
 // exports
 
@@ -17178,7 +17178,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(0).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "underwear"*/673));
+							resolve(__webpack_require__( /*webpackChunkName: "underwear"*/674));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -17187,7 +17187,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(2).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "lounge"*/674));
+							resolve(__webpack_require__( /*webpackChunkName: "lounge"*/675));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -17196,7 +17196,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(1).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "socks"*/675));
+							resolve(__webpack_require__( /*webpackChunkName: "socks"*/676));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -17205,7 +17205,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(4).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "accessories"*/676));
+							resolve(__webpack_require__( /*webpackChunkName: "accessories"*/677));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -17214,7 +17214,7 @@ var Routes = function Routes() {
 			component: function component(props) {
 				return _react2.default.createElement(LoadingComponent, _extends({}, props, { routePromise: new Promise(function (resolve) {
 						__webpack_require__.e/* require.ensure */(3).then((function (require) {
-							resolve(__webpack_require__( /*webpackChunkName: "contact"*/677));
+							resolve(__webpack_require__( /*webpackChunkName: "contact"*/678));
 						}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 					}) }));
 			}
@@ -17391,7 +17391,11 @@ var _logoRow7 = __webpack_require__(660);
 
 var _logoRow8 = _interopRequireDefault(_logoRow7);
 
-var _instafeed = __webpack_require__(661);
+var _storeShot = __webpack_require__(661);
+
+var _storeShot2 = _interopRequireDefault(_storeShot);
+
+var _instafeed = __webpack_require__(662);
 
 var _instafeed2 = _interopRequireDefault(_instafeed);
 
@@ -17564,7 +17568,7 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-gold' },
-                '3276 M ST NW'
+                '3109 M ST NW'
               )
             ),
             _react2.default.createElement(
@@ -17582,7 +17586,7 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-light-green' },
-                '(202) 342-2500'
+                '(202) 333-4213'
               )
             ),
             _react2.default.createElement(
@@ -17591,7 +17595,16 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-dark-green' },
-                'MON-FRI 10am - 6pm'
+                'MON-TH 10am - 7:30pm'
+              )
+            ),
+            _react2.default.createElement(
+              _reactTextfit.Textfit,
+              { mode: 'single' },
+              _react2.default.createElement(
+                'span',
+                { className: 'text-dark-brown lighten' },
+                'FRI-SAT 10am - 8:30pm'
               )
             ),
             _react2.default.createElement(
@@ -17600,7 +17613,7 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-dark-brown' },
-                'SAT-SUN 10am - 9pm'
+                'SUNDAY 11am - 6pm'
               )
             )
           ),
@@ -17609,6 +17622,11 @@ var Home = function (_Component) {
             { className: 'map-wrap' },
             _react2.default.createElement(_googlemap2.default, null)
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row store-shot-wrap' },
+          _react2.default.createElement('img', { src: _storeShot2.default })
         ),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -30453,7 +30471,7 @@ var Footer = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-gold' },
-                '3276 M ST NW'
+                '3109 M ST NW'
               )
             ),
             _react2.default.createElement(
@@ -30471,7 +30489,7 @@ var Footer = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-light-green' },
-                '(202) 342-2500'
+                '(202) 333-4213'
               )
             ),
             _react2.default.createElement(
@@ -30480,7 +30498,16 @@ var Footer = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-dark-green' },
-                'MON-FRI 10am - 6pm'
+                'MON-TH 10am - 7:30pm'
+              )
+            ),
+            _react2.default.createElement(
+              _reactTextfit.Textfit,
+              { mode: 'single' },
+              _react2.default.createElement(
+                'span',
+                { className: 'text-dark-brown lighten' },
+                'FRI-SAT 10am - 8:30pm'
               )
             ),
             _react2.default.createElement(
@@ -30489,7 +30516,7 @@ var Footer = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'text-dark-brown' },
-                'SAT-SUN 10am - 9pm'
+                'SUNDAY 11am - 6pm'
               )
             )
           )
@@ -31886,6 +31913,12 @@ module.exports = __webpack_require__.p + "img/96255d80b82461c3246e1b2d7cb83014.p
 /* 661 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "img/3884f3e0f86232173de9bd607bfa0ac3.jpg";
+
+/***/ }),
+/* 662 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -31899,15 +31932,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactInstafeed = __webpack_require__(662);
+var _reactInstafeed = __webpack_require__(663);
 
 var _reactInstafeed2 = _interopRequireDefault(_reactInstafeed);
 
-var _logoInstagram = __webpack_require__(668);
+var _logoInstagram = __webpack_require__(669);
 
 var _logoInstagram2 = _interopRequireDefault(_logoInstagram);
 
-__webpack_require__(669);
+__webpack_require__(670);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31982,7 +32015,7 @@ curl -F 'client_id=ac5be985aadf4a6b9146d17dec8f3973' \
 */
 
 /***/ }),
-/* 662 */
+/* 663 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31998,9 +32031,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(663);
+var _propTypes = __webpack_require__(664);
 
-var _instafeed = __webpack_require__(667);
+var _instafeed = __webpack_require__(668);
 
 var _instafeed2 = _interopRequireDefault(_instafeed);
 
@@ -32061,7 +32094,7 @@ InstafeedComponent.propTypes = {
 exports.default = InstafeedComponent;
 
 /***/ }),
-/* 663 */
+/* 664 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -32086,17 +32119,17 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(664)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(665)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(666)();
+  module.exports = __webpack_require__(667)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 664 */
+/* 665 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32115,7 +32148,7 @@ var warning = __webpack_require__(248);
 var assign = __webpack_require__(6);
 
 var ReactPropTypesSecret = __webpack_require__(143);
-var checkPropTypes = __webpack_require__(665);
+var checkPropTypes = __webpack_require__(666);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -32646,7 +32679,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 665 */
+/* 666 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32713,7 +32746,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 666 */
+/* 667 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32778,7 +32811,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 667 */
+/* 668 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Generated by CoffeeScript 1.9.3
@@ -33158,19 +33191,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 668 */
+/* 669 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/8ef4391e0482ca8eae21aeacf84e4902.svg";
 
 /***/ }),
-/* 669 */
+/* 670 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(670);
+var content = __webpack_require__(671);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -33195,7 +33228,7 @@ if(false) {
 }
 
 /***/ }),
-/* 670 */
+/* 671 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(35)(undefined);
@@ -33210,4 +33243,4 @@ exports.push([module.i, ".insta-header{display:-webkit-box;display:-ms-flexbox;d
 
 /***/ })
 ],[249]);
-//# sourceMappingURL=app.3ac93d669cd12ebe2693.js.map
+//# sourceMappingURL=app.4c84dcc9a3b99c6ee436.js.map

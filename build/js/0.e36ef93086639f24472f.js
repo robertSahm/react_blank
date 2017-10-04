@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 673:
+/***/ 674:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35,4 +35,4 @@ exports.default = Underwear;
 /***/ })
 
 });
-//# sourceMappingURL=0.db50a48671ceac016fed.js.map
+//# sourceMappingURL=0.e36ef93086639f24472f.js.map

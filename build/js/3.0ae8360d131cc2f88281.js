@@ -1,6 +1,6 @@
-webpackJsonp([4],{
+webpackJsonp([3],{
 
-/***/ 676:
+/***/ 678:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,25 +14,23 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(32);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Accessories = function Accessories() {
+var Contact = function Contact() {
 	return _react2.default.createElement(
 		"div",
 		{ className: "col-12" },
 		_react2.default.createElement(
 			"h3",
 			{ className: "text-center" },
-			"Accessories"
+			"CONTACT"
 		)
 	);
 };
 
-exports.default = Accessories;
+exports.default = Contact;
 
 /***/ })
 
 });
-//# sourceMappingURL=4.3285ad8da45a9d5b5c34.js.map
+//# sourceMappingURL=3.0ae8360d131cc2f88281.js.map
