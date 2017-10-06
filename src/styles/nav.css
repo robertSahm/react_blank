@@ -1,4 +1,5 @@
 @import 'colors.css';
+@import 'media-queries.css';
 
 .nav-wrap {
   font-family: 'Oswald';
@@ -6,6 +7,9 @@
   justify-content: center;
   margin: 15px auto 25px;
   position: relative;
+  @media (--phone) {
+    justify-content: space-around;
+  }
 
   & .link-wrap {
     width: 100px;
@@ -20,6 +24,9 @@
     text-align: center;
     font-weight: 300;
     cursor: pointer;
+    @media (--phone) {
+      font-size: 17px;
+    }
 
     &:hover {
       color: var(--blue);

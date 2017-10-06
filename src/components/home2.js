@@ -17,38 +17,39 @@ import HandLine from '../img/hand-line.svg'
 import Line from '../img/line.svg'
 
   // Underwear
-import Graham1 from '../img/underwear/Robert_Graham_stage_1.jpg'
-import Hanro1 from '../img/underwear/hanro_1.jpg'
-import Hom1 from '../img/underwear/hom_closet.jpg'
-import Wood1 from '../img/underwear/wood_1.jpg'
-import Undr1 from '../img/underwear/2undr_1.jpg'
-import Tani1 from '../img/underwear/tani_1.jpg'
-import Spanx1 from '../img/underwear/spanx_3.jpg'
+import Underwear1 from '../img/underwear/underwear-1-hd.jpg'
+import Underwear2 from '../img/underwear/underwear-2.jpg'
+import Underwear3 from '../img/underwear/underwear-3.jpg'
+import Underwear4 from '../img/underwear/underwear-4.jpg'
+import Underwear5 from '../img/underwear/underwear-5.jpg'
 
-  // Lifestyle
-import UndrLifestyle1 from '../img/lifestyle/Undr_1.jpg'
-import UndrLifestyle2 from '../img/lifestyle/Undr_2.jpg'
-import UndrLifestyle3 from '../img/lifestyle/Undr_3.jpg'
+// Loungewear
+import Lounge1 from '../img/loungewear/lounge-1.jpg'
+import Lounge2 from '../img/loungewear/lounge-2.jpg'
+import Lounge3 from '../img/loungewear/lounge-3.jpg'
 
-  // Loungewear
-import DR_3 from '../img/loungewear/derek_rose_3.jpg'
+// Socks
+import Socks1 from '../img/socks/socks-1.jpg'
+import Socks2 from '../img/socks/socks-2.jpg'
+import Socks3 from '../img/socks/socks-3.jpg'
+import Socks4 from '../img/socks/socks-4.jpg'
+import Socks5 from '../img/socks/socks-5.jpg'
+import Socks6 from '../img/socks/socks-6.jpg'
+import Socks7 from '../img/socks/socks-7.jpg'
+import Socks8 from '../img/socks/socks-8.jpg'
 
-  // Socks
-import Falke1 from '../img/socks/falke_1.jpg'
-import Falke2 from '../img/socks/falke_2.jpg'
-import Falke3 from '../img/socks/falke_3.jpg'
-import Falke4 from '../img/socks/falke_4.jpg'
-import Falke5 from '../img/socks/falke_5.jpg'
+// TravAcccessories
+import Acc1 from '../img/accessories/acc-1.jpg'
+import Acc2 from '../img/accessories/acc-2.jpg'
+import Acc3 from '../img/accessories/acc-3.jpg'
+import Acc4 from '../img/accessories/acc-4.jpg'
+import Acc5 from '../img/accessories/acc-5.jpg'
+import Acc6 from '../img/accessories/acc-6.jpg'
+import Acc7 from '../img/accessories/acc-7.jpg'
+import Acc8 from '../img/accessories/acc-8.jpg'
+import Acc9 from '../img/accessories/acc-9.jpg'
 
-  // Travel Accessories
-import Ettinger1 from '../img/accessories/ettinger_box_1.jpg'
-import Ettinger2 from '../img/accessories/ettinger_canteen_1.jpg'
-import Ettinger3 from '../img/accessories/ettinger_duffel_1.jpg'
-import Ettinger4 from '../img/accessories/ettinger_keychain_1.jpg'
-import Ettinger5 from '../img/accessories/ettinger_passport_1.jpg'
-import HookAndAlbert1 from '../img/accessories/hookandalbert_briefcase_1.jpg'
-import HookAndAlbert2 from '../img/accessories/hookandalbert_duffel_2.jpg'
-import HookAndAlbert3 from '../img/accessories/hookandalbert_duffel_3.jpg'
+// Lifestyle
 
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
@@ -86,24 +87,24 @@ class Home extends Component {
     return (
       <div className='content-home'>
 
-        <div className="carousel-wrapper">
+        <div className="carousel-wrapper edge-pad">
           <Carousel {...settings}>
-            <img src={Spanx1} />
-            <img src={UndrLifestyle1} />
-            <img src={DR_3} />
-            <img src={UndrLifestyle2} />
-            <img src={UndrLifestyle3} />
+            <img src={Underwear1} />
+            <img src={Underwear2} />
+            <img src={Underwear3} />
+            <img src={Underwear4} />
+            <img src={Underwear5} />
           </Carousel>
           <CreateLink path={pathname} to='/underwear' text='UNDERWEAR' />
         </div>
 
+
+
         <div className="carousel-wrapper edge-pad">
           <Carousel {...settings}>
-            <img src={UndrLifestyle1} />
-            <img src={DR_3} />
-            <img src={Spanx1} />
-            <img src={UndrLifestyle2} />
-            <img src={UndrLifestyle3} />
+            <img src={Lounge1} />
+            <img src={Lounge2} />
+            <img src={Lounge3} />
           </Carousel>
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
@@ -111,20 +112,28 @@ class Home extends Component {
         <div className={'row'}>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
-              <img src={Falke2} />
-              <img src={Falke1} />
-              <img src={Falke3} />
-              <img src={Falke4} />
+              <img src={Socks6} />
+              <img src={Socks2} />
+              <img src={Socks1} />
+              <img src={Socks3} />
+              <img src={Socks4} />
+              <img src={Socks5} />
+              <img src={Socks7} />
+              <img src={Socks8} />
             </Carousel>
             <CreateLink path={pathname} to='/socks' text='SOCKS' />
           </div>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
-              <img src={Ettinger2} />
-              <img src={Ettinger1} />
-              <img src={Ettinger3} />
-              <img src={Ettinger4} />
-              <img src={Ettinger5} />
+              <img src={Acc2} />
+              <img src={Acc1} />
+              <img src={Acc3} />
+              <img src={Acc4} />
+              <img src={Acc5} />
+              <img src={Acc6} />
+              <img src={Acc7} />
+              <img src={Acc8} />
+              <img src={Acc9} />
             </Carousel>
             <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
           </div>
@@ -158,13 +167,13 @@ class Home extends Component {
                <span className={'text-light-green'}>(202) 333-4213</span>
              </Textfit>
             <Textfit mode="single">
-               <span className={'text-dark-green'}>MON-TH 10am - 7:30pm</span>
+               <span className={'text-dark-green'}>MON-TH | 10 am - 7:30 pm</span>
              </Textfit>
              <Textfit mode="single">
-               <span className={'text-dark-brown lighten'}>FRI-SAT 10am - 8:30pm</span>
+               <span className={'text-dark-brown lighten'}>FRI-SAT | 10 am - 8:30 pm</span>
              </Textfit>
             <Textfit mode="single">
-              <span className={'text-dark-brown'}>SUNDAY 11am - 6pm</span>
+              <span className={'text-dark-brown'}>SUNDAY | 11 am - 6 pm</span>
             </Textfit>
           </div>
           <div className="map-wrap">
@@ -172,7 +181,7 @@ class Home extends Component {
           </div>
         </div>
         <div className={'row store-shot-wrap'}>
-          <img src={StoreShot} />
+          {/*<img src={StoreShot} />*/}
         </div>
 
         <Footer />

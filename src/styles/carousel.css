@@ -1,8 +1,5 @@
 @import 'colors.css';
-
-:root {
-  @custom-media --1200up (width >= 1200px);
-}
+@import 'media-queries.css';
 
 .carousel-wrapper {
   lost-utility: clearfix;
@@ -14,6 +11,10 @@
 
   &.half {
     lost-column: 1/2;
+
+    @media (--phone) {
+      lost-column: 1;
+    }
 
     &.small-img img {
       height: 100%;
@@ -82,6 +83,10 @@
     align-content: center;
     margin-top: 15px;
 
+    @media (--phone) {
+      margin: 25px auto 0 auto;
+    }
+
     & .control-arrow {
       transition: opacity 0.25s ease;
       border: 0;
@@ -104,10 +109,22 @@
 
     & .control-prev {
       background: url(../img/arrow-left.svg) right center no-repeat;
+
+      @media (--phone) {
+        background: url(../img/arrow-left-mobile.svg) right center no-repeat;
+        width: 20px;
+        height: 34px;
+      }
     }
 
     & .control-next {
       background: url(../img/arrow-right.svg) left center no-repeat;
+
+      @media (--phone) {
+        background: url(../img/arrow-right-mobile.svg) right center no-repeat;
+        width: 20px;
+        height: 34px;
+      }
     }
 
     /* Dots */
@@ -159,4 +176,5 @@
 .line {
   margin: 8px auto 8px;
   display: block;
+  width: 100%;
 }

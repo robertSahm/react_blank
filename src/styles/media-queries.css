@@ -1,0 +1,18 @@
+:root {
+  @custom-media --phone   ( width <= 544px );
+  @custom-media --tablet  ( width >= 545px ) and (width <= 768px);
+  @custom-media --laptop  ( width >= 769px ) and (width <= 992px);
+  @custom-media --desktop ( width >= 993px );
+}
+
+@media (--phone) {
+}
+
+@media (--tablet) {
+}
+
+@media (--laptop) {
+}
+
+@media (--desktop) {
+}

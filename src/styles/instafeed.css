@@ -29,7 +29,8 @@
 
   & .post {
       width: 200px;
-      padding: 3px;
+      border: 1px solid var(--gray);
+      padding: 10px;
 
     & img {
       width: 100%;
