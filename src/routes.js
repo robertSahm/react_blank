@@ -12,7 +12,7 @@ class LoadingComponent extends Component {
 		this.props.routePromise.then(module=>{
 			setTimeout(()=>{
 				this.setState({ loaded: true, module: module.default });
-			}, 300);
+			}, 0);
 		});
 	}
 
@@ -22,7 +22,7 @@ class LoadingComponent extends Component {
 		if( this.state.loaded ) {
 			return <this.state.module {...this.props} />
 		} else {
-			return <div><h4>LOADING</h4></div>
+			return <div></div>
 		}
 	}
 }
