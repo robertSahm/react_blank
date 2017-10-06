@@ -1,50 +1,66 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router-dom'
 import { Textfit } from 'react-textfit'
-import Slider from './react-slick/lib/index'
 import GoogleMap from './googlemap'
-import Footer from './footer'
+import LogoFull from '../img/LogoFull.svg'
+import InstafeedComponent from './instafeed'
 
-import '../styles/slick.css'
-import '../styles/slick-theme.css'
+// Carousel
+import { Carousel } from './react-responsive-carousel';
+import styles from '../styles/carousel.css'
+
+// Images
+  // General Page Images
 import ArrowLeft from '../img/arrow-left.svg'
 import ArrowRight from '../img/arrow-right.svg'
 import HandLine from '../img/hand-line.svg'
-import LogoFull from '../img/LogoFull.svg'
+import Line from '../img/line.svg'
 
-// Slider Images
   // Underwear
-import Graham1 from '../img/underwear/Robert_Graham_stage_1.jpg'
-import Hanro1 from '../img/underwear/hanro_1.jpg'
-import Hom1 from '../img/underwear/hom_closet.jpg'
-import Wood1 from '../img/underwear/wood_1.jpg'
-import Undr1 from '../img/underwear/2undr_1.jpg'
-import Tani1 from '../img/underwear/tani_1.jpg'
+import Underwear1 from '../img/underwear/underwear-1-hd.jpg'
+import Underwear2 from '../img/underwear/underwear-2.jpg'
+import Underwear3 from '../img/underwear/underwear-3.jpg'
+import Underwear4 from '../img/underwear/underwear-4.jpg'
+import Underwear5 from '../img/underwear/underwear-5.jpg'
 
-  // Sleep and Loungewear
-import DerekRose1 from '../img/loungewear/derek_rose_1.jpg'
-import DerekRose2 from '../img/loungewear/derek_rose_2.jpg'
-import HanroLounge1 from '../img/loungewear/Hanro_1.jpg'
-import HanroLounge2 from '../img/loungewear/Hanro_2.jpg'
-import HanroLounge3 from '../img/loungewear/Hanro_3.jpg'
-import MyPackage1 from '../img/loungewear/mypackage_1.jpg'
+// Loungewear
+import Lounge1 from '../img/loungewear/lounge-1.jpg'
+import Lounge2 from '../img/loungewear/lounge-2.jpg'
+import Lounge3 from '../img/loungewear/lounge-3.jpg'
 
-  // Socks
-import Falke1 from '../img/socks/falke_1.jpg'
-import Falke2 from '../img/socks/falke_2.jpg'
-import Falke3 from '../img/socks/falke_3.jpg'
-import Falke4 from '../img/socks/falke_4.jpg'
-import Falke5 from '../img/socks/falke_5.jpg'
+// Socks
+import Socks1 from '../img/socks/socks-1.jpg'
+import Socks2 from '../img/socks/socks-2.jpg'
+import Socks3 from '../img/socks/socks-3.jpg'
+import Socks4 from '../img/socks/socks-4.jpg'
+import Socks5 from '../img/socks/socks-5.jpg'
+import Socks6 from '../img/socks/socks-6.jpg'
+import Socks7 from '../img/socks/socks-7.jpg'
+import Socks8 from '../img/socks/socks-8.jpg'
 
-  // Travel Accessories
-import Ettinger1 from '../img/accessories/ettinger_box_1.jpg'
-import Ettinger2 from '../img/accessories/ettinger_canteen_1.jpg'
-import Ettinger3 from '../img/accessories/ettinger_duffel_1.jpg'
-import Ettinger4 from '../img/accessories/ettinger_keychain_1.jpg'
-import Ettinger5 from '../img/accessories/ettinger_passport_1.jpg'
-import HookAndAlbert1 from '../img/accessories/hookandalbert_briefcase_1.jpg'
-import HookAndAlbert2 from '../img/accessories/hookandalbert_duffel_2.jpg'
-import HookAndAlbert3 from '../img/accessories/hookandalbert_duffel_3.jpg'
+// TravAcccessories
+import Acc1 from '../img/accessories/acc-1.jpg'
+import Acc2 from '../img/accessories/acc-2.jpg'
+import Acc3 from '../img/accessories/acc-3.jpg'
+import Acc4 from '../img/accessories/acc-4.jpg'
+import Acc5 from '../img/accessories/acc-5.jpg'
+import Acc6 from '../img/accessories/acc-6.jpg'
+import Acc7 from '../img/accessories/acc-7.jpg'
+import Acc8 from '../img/accessories/acc-8.jpg'
+import Acc9 from '../img/accessories/acc-9.jpg'
+
+// Lifestyle
+
+  // Logos
+import LogoRow1 from '../img/logos/logo-row-1.png'
+import LogoRow2 from '../img/logos/logo-row-2.png'
+import LogoRow3 from '../img/logos/logo-row-3.png'
+import LogoRow4 from '../img/logos/logo-row-4.png'
+
+// Store Shots
+import StoreShot1 from '../img/store/store-1.jpg'
+import StoreShot2 from '../img/store/store-2.jpg'
+
 
 const CreateLink = (props) => {
   const {path, to, text} = props;
@@ -59,118 +75,127 @@ const CreateLink = (props) => {
   );
 };
 
-const NextArrow = (props) => {
-  const {className, onClick} = props
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-    >
-      <img src={ArrowRight} />
-    </div>
-  )
-}
 
-const PrevArrow = (props) => {
-  const {className, onClick} = props
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-    >
-      <img src={ArrowLeft} />
-    </div>
-  )
-}
+class Home extends Component {
+  render() {
+    const settings = {
+      showThumbs: false,
+      showStatus: false,
+      dynamicHeight: false,
+    }
 
-const Home = (props) => {
-  const { pathname } = props.location;
+    const { pathname } = this.props.location;
 
-  const settings = {
-    dots: true,
-    variableWidth: true,
-    infinite: true,
-    centerMode: false,
-    slidesToShow: 1, //Number of slides to scroll for each navigation item
-    slidesToScroll: 1, // Number of slides to be visible at a time
-    initialSlide: 0,
-    speed: 400,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
+    return (
+      <div className='content-home'>
 
-  return (
-    <div className='content-home'>
-
-      <Slider {...settings}>
-        <img src={Hom1} />
-        <img src={Wood1} />
-        <img src={Hanro1} />
-        <img src={Undr1} />
-        <img src={Tani1} />
-      </Slider>
-      <CreateLink path={pathname} to='/contact' text='MORE UNDERWEAR' />
-
-      <Slider {...settings}>
-        <img src={DerekRose1} />
-        <img src={DerekRose2} />
-        <img src={HanroLounge1} />
-        <img src={HanroLounge2} />
-        <img src={HanroLounge3} />
-        <img src={MyPackage1} />
-      </Slider>
-      <CreateLink path={pathname} to='/contact' text='MORE LOUNGEWEAR AND SLEEPWEAR' />
-
-      <Slider {...settings}>
-        <img src={Falke1} />
-        <img src={Falke2} />
-        <img src={Falke3} />
-        <img src={Falke4} />
-        <img src={Falke5} />
-      </Slider>
-      <CreateLink path={pathname} to='/contact' text='MORE SOCKS' />
-
-      <Slider {...settings}>
-        <img src={Ettinger1} />
-        <img src={Ettinger2} />
-        <img src={Ettinger3} />
-        <img src={Ettinger4} />
-        <img src={Ettinger5} />
-        <img src={HookAndAlbert1} />
-        <img src={HookAndAlbert2} />
-        <img src={HookAndAlbert3} />
-      </Slider>
-      <CreateLink path={pathname} to='/contact' text='MORE TRAVEL ACCESSORIES' />
-
-      <div className={'address-row'}>
-        <div className={'address-box'}>
-          <Textfit mode="single">
-            <span className={'text-gold'}>3276 M ST NW</span>
-          </Textfit>
-          <Textfit mode="single">
-            <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
-          </Textfit>
-          <Textfit mode="single">
-             <span className={'text-light-green'}>(202) 342-2500</span>
-           </Textfit>
-          <Textfit mode="single">
-             <span className={'text-dark-green'}>MON-FRI 10am - 6pm</span>
-           </Textfit>
-          <Textfit mode="single">
-            <span className={'text-dark-brown'}>SAT-SUN 10am - 9pm</span>
-          </Textfit>
+        <div className="carousel-wrapper edge-pad">
+          <Carousel {...settings}>
+            <img src={Underwear1} />
+            <img src={Underwear2} />
+            <img src={Underwear3} />
+            <img src={Underwear4} />
+            <img src={Underwear5} />
+          </Carousel>
+          <CreateLink path={pathname} to='/underwear' text='UNDERWEAR' />
         </div>
 
-        <div className="map-wrap">
-          {/*<GoogleMap />*/}
+        <div className="carousel-wrapper edge-pad">
+          <Carousel {...settings}>
+            <img src={Lounge1} />
+            <img src={Lounge2} />
+            <img src={Lounge3} />
+          </Carousel>
+          <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
+
+        <div className={'row half-wrap'}>
+          <div className="carousel-wrapper half small-img">
+            <Carousel {...settings}>
+              <img src={Socks6} />
+              <img src={Socks2} />
+              <img src={Socks1} />
+              <img src={Socks3} />
+              <img src={Socks4} />
+              <img src={Socks5} />
+              <img src={Socks7} />
+              <img src={Socks8} />
+            </Carousel>
+            <CreateLink path={pathname} to='/socks' text='SOCKS' />
+          </div>
+          <div className="carousel-wrapper half small-img">
+            <Carousel {...settings}>
+              <img src={Acc2} />
+              <img src={Acc1} />
+              <img src={Acc3} />
+              <img src={Acc4} />
+              <img src={Acc5} />
+              <img src={Acc6} />
+              <img src={Acc7} />
+              <img src={Acc8} />
+              <img src={Acc9} />
+            </Carousel>
+            <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
+          </div>
+        </div>
+
+        <div className={'store-shot-row'}>
+          <img src={StoreShot2} />
+          <img src={StoreShot1} />
+        </div>
+
+        <div className={'address-row'}>
+          <div className={'address-box'}>
+            <Textfit mode="single">
+              <span className={'text-gold'}>3109 M ST NW</span>
+            </Textfit>
+            <Textfit mode="single">
+              <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
+            </Textfit>
+            <Textfit mode="single">
+               <span className={'text-light-green'}>(202) 333-4213</span>
+             </Textfit>
+            <Textfit mode="single">
+               <span className={'text-dark-green'}>MON-TH | 10 am - 7:30 pm</span>
+             </Textfit>
+             <Textfit mode="single">
+               <span className={'text-dark-brown lighten'}>FRI-SAT | 10 am - 8:30 pm</span>
+             </Textfit>
+            <Textfit mode="single">
+              <span className={'text-dark-brown'}>SUNDAY | 11 am - 6 pm</span>
+            </Textfit>
+          </div>
+          <div className="map-wrap">
+            <GoogleMap />
+          </div>
+        </div>
+
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
+
+        <InstafeedComponent />
+
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
+
+        <div className="logo-carousel">
+          <img src={LogoRow1} />
+          <img src={LogoRow2} />
+          <img src={LogoRow3} />
+          <img src={LogoRow4} />
+        </div>
+
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
+
       </div>
-
-      <Footer />
-
-		</div>
-	);
+    )
+  }
 }
 
 export default Home
+
+

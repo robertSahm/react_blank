@@ -12,6 +12,8 @@ import Header from './components/header'
 import Nav from './components/nav'
 // get routes
 import Routes from './routes'
+// import footer
+import Footer from './components/footer'
 
 
 const App = () =>
@@ -20,7 +22,8 @@ const App = () =>
       <Header />
 			<Route route="/" component={Nav} />
 			<Routes />
-		</div>
+      <Footer />
+    </div>
 	</Router>;
 
 ReactDOM.render(
