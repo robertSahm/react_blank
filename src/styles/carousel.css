@@ -12,7 +12,7 @@
   &.half {
     lost-column: 1/2;
 
-    @media (--phone) {
+    @media (width <= 850px) {
       lost-column: 1;
     }
 
@@ -112,7 +112,7 @@
 
       @media (--phone) {
         background: url(../img/arrow-left-mobile.svg) right center no-repeat;
-        width: 20px;
+        width: 30px;
         height: 34px;
       }
     }
@@ -159,16 +159,24 @@
 }
 
 .logo-carousel {
-  display: block;
-  width: 65%;
-  max-width: 900px;
-  margin: 0 auto;
+  border: 1px solid gray(200);
+  margin: 0 5%;
+  padding: 3% 10%;
+
+  @media (--phone) {
+    margin: 0 2%;
+    padding: 5%;
+  }
+
+  @media (--desktop) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
   & img {
-    display: block;
     width: 100%;
-    clear: both;
-    margin: 25px auto;
+    /* clear: both; */
+    /* margin: 25px auto; */
   }
 }
 
@@ -177,4 +185,5 @@
   margin: 8px auto 8px;
   display: block;
   width: 100%;
+  max-width: 450px;
 }

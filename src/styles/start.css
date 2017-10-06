@@ -16,15 +16,32 @@ ul {
 .address-row {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 40px;
 
-  & .map-wrap {
-    width: 75%;
+  @media (--laptop-up) {
+    margin: 40px auto;
+    max-width: 1200px;
   }
 
   & .address-box {
     width: 20%;
+    @media (--tablet) {
+      width: 50%;
+      margin-bottom: 40px;
+    }
+    @media (--phone) {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+  }
+
+  & .map-wrap {
+    width: 75%;
+    @media (--tablet-down) {
+      width: 100%;
+    }
   }
 }
 
@@ -36,12 +53,14 @@ ul {
   margin: 0 3%;
 }
 
-.store-shot-wrap {
-  /* width: 100%; */
-  margin-top: 20px;
+.store-shot-row {
+  display: block;
+  width: 100%;
+  padding: 5% 4% 0;
 
   & img {
-    min-width: 100%;
+    width: 100%;
+    margin-top: 3px;
   }
 }
 

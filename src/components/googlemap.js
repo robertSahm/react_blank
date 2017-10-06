@@ -12,7 +12,7 @@ const StyledMapWithAnInfoBox = compose (
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `415px` }} />,
     mapElement: <div style={{ height: `100%` }} />,
-    center: { lat: 38.904995, lng: -77.065170 },
+    center: { lat: 38.905736, lng: -77.061521 },
   }),
   withScriptjs,
   withGoogleMap

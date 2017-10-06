@@ -4,6 +4,7 @@ import { Textfit } from 'react-textfit'
 import GoogleMap from './googlemap'
 import Footer from './footer'
 import LogoFull from '../img/LogoFull.svg'
+import InstafeedComponent from './instafeed'
 
 // Carousel
 import { Carousel } from './react-responsive-carousel';
@@ -57,8 +58,10 @@ import LogoRow2 from '../img/logos/logo-row-2.png'
 import LogoRow3 from '../img/logos/logo-row-3.png'
 import LogoRow4 from '../img/logos/logo-row-4.png'
 
-import StoreShot from '../img/store-shot.jpg'
-import InstafeedComponent from './instafeed'
+// Store Shots
+import StoreShot1 from '../img/store/store-1.jpg'
+import StoreShot2 from '../img/store/store-2.jpg'
+
 
 const CreateLink = (props) => {
   const {path, to, text} = props;
@@ -97,8 +100,6 @@ class Home extends Component {
           </Carousel>
           <CreateLink path={pathname} to='/underwear' text='UNDERWEAR' />
         </div>
-
-
 
         <div className="carousel-wrapper edge-pad">
           <Carousel {...settings}>
@@ -140,19 +141,17 @@ class Home extends Component {
         </div>
 
         <InstafeedComponent />
-        <div className={'row'}>
-          <img className={'line'} src={Line} />
-        </div>
 
-        <div className="carousel-wrapper logo-carousel edge-pad">
+        <div className="logo-carousel">
           <img src={LogoRow1} />
           <img src={LogoRow2} />
           <img src={LogoRow3} />
           <img src={LogoRow4} />
         </div>
 
-        <div className={'row'}>
-          <img className={'line'} src={Line} />
+        <div className={'store-shot-row'}>
+          <img src={StoreShot2} />
+          <img src={StoreShot1} />
         </div>
 
         <div className={'address-row'}>
@@ -179,9 +178,6 @@ class Home extends Component {
           <div className="map-wrap">
             <GoogleMap />
           </div>
-        </div>
-        <div className={'row store-shot-wrap'}>
-          {/*<img src={StoreShot} />*/}
         </div>
 
         <Footer />

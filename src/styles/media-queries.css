@@ -3,16 +3,8 @@
   @custom-media --tablet  ( width >= 545px ) and (width <= 768px);
   @custom-media --laptop  ( width >= 769px ) and (width <= 992px);
   @custom-media --desktop ( width >= 993px );
+
+  @custom-media --laptop-up ( width >= 769px );
+  @custom-media --tablet-down ( width <= 768px );
 }
 
-@media (--phone) {
-}
-
-@media (--tablet) {
-}
-
-@media (--laptop) {
-}
-
-@media (--desktop) {
-}

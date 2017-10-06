@@ -17,9 +17,9 @@
 
   & a {
     text-decoration: none;
-    color: var(--gray);
-    font-size: 15px;
-    letter-spacing: .1em;
+    color: gray(120);
+    font-size: 16px;
+    letter-spacing: .12em;
     display: block;
     text-align: center;
     font-weight: 300;
