@@ -56,7 +56,7 @@ ul {
 .store-shot-row {
   display: block;
   width: 100%;
-  padding: 5% 4% 0;
+  padding: 0 4% 4%;
 
   & img {
     width: 100%;

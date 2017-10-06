@@ -110,7 +110,7 @@ class Home extends Component {
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
 
-        <div className={'row'}>
+        <div className={'row half-wrap'}>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
               <img src={Socks6} />
@@ -138,15 +138,6 @@ class Home extends Component {
             </Carousel>
             <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
           </div>
-        </div>
-
-        <InstafeedComponent />
-
-        <div className="logo-carousel">
-          <img src={LogoRow1} />
-          <img src={LogoRow2} />
-          <img src={LogoRow3} />
-          <img src={LogoRow4} />
         </div>
 
         <div className={'store-shot-row'}>
@@ -178,6 +169,27 @@ class Home extends Component {
           <div className="map-wrap">
             <GoogleMap />
           </div>
+        </div>
+
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
+
+        <InstafeedComponent />
+
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
+
+        <div className="logo-carousel">
+          <img src={LogoRow1} />
+          <img src={LogoRow2} />
+          <img src={LogoRow3} />
+          <img src={LogoRow4} />
+        </div>
+
+        <div className={'line'}>
+          <img src={Line} />
         </div>
 
         <Footer />
