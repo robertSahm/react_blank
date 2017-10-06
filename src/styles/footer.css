@@ -9,6 +9,8 @@
   & .footer-nav-wrap {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 30px;
 
     & .menu-item {
       font-family: 'Oswald';
@@ -25,6 +27,10 @@
     justify-content: center;
     margin-top: 30px;
     padding-bottom: 30px;
+  }
+
+  & .address-row {
+    margin-top: 0;
   }
 
   & h5.copyright {

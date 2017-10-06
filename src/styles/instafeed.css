@@ -83,7 +83,6 @@
       @media (--tablet-down) {
         width: 90%;
         margin: 0 auto 20px auto;
-        /* border-bottom: 1px solid gray(120); */
       }
 
       & img {

@@ -6,5 +6,6 @@
 
   @custom-media --laptop-up ( width >= 769px );
   @custom-media --tablet-down ( width <= 768px );
+  @custom-media --laptop-down ( width <= 992px );
 }
 
