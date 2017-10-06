@@ -7592,7 +7592,7 @@ var LoadingComponent = function (_Component) {
 			this.props.routePromise.then(function (module) {
 				setTimeout(function () {
 					_this2.setState({ loaded: true, module: module.default });
-				}, 300);
+				}, 0);
 			});
 		}
 	}, {
@@ -7603,15 +7603,7 @@ var LoadingComponent = function (_Component) {
 			if (this.state.loaded) {
 				return _react2.default.createElement(this.state.module, this.props);
 			} else {
-				return _react2.default.createElement(
-					"div",
-					null,
-					_react2.default.createElement(
-						"h4",
-						null,
-						"LOADING"
-					)
-				);
+				return _react2.default.createElement("div", null);
 			}
 		}
 	}]);
@@ -23735,4 +23727,4 @@ exports.push([module.i, ".footer-wrap{width:100%;background-color:#777;margin-to
 
 /***/ })
 ],[189]);
-//# sourceMappingURL=app.163e533ebd00d4450c33.js.map
+//# sourceMappingURL=app.59a616fb7f26f74d516e.js.map
