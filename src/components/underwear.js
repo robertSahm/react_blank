@@ -23,16 +23,16 @@ class Underwear extends Component {
             <img src={Underwear1} />
           </div>
           <div className={'img-wrap'}>
-            <img src={Underwear4} />
+            <img src={Underwear2} />
           </div>
           <div className={'img-wrap'}>
             <img src={Underwear3} />
           </div>
           <div className={'img-wrap'}>
-            <img src={Underwear5} />
+            <img src={Underwear4} />
           </div>
           <div className={'img-wrap'}>
-            <img src={Underwear2} />
+            <img src={Underwear5} />
           </div>
           <div className={'img-wrap'}>
             <img src={Underwear6} />

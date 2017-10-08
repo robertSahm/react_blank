@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router-dom'
 import { Textfit } from 'react-textfit'
-import GoogleMap from './googlemap'
+// import GoogleMap from './googlemap'
 import LogoFull from '../img/LogoFull.svg'
-import InstafeedComponent from './instafeed'
+// import InstafeedComponent from './instafeed'
 
 // Carousel
 import { Carousel } from './react-responsive-carousel';
@@ -17,7 +17,7 @@ import HandLine from '../img/hand-line.svg'
 import Line from '../img/line.svg'
 
   // Underwear
-import Underwear1 from '../img/underwear/underwear-1-hd.jpg'
+import Underwear1 from '../img/underwear/underwear-1.jpg'
 import Underwear2 from '../img/underwear/underwear-2.jpg'
 import Underwear3 from '../img/underwear/underwear-3.jpg'
 import Underwear4 from '../img/underwear/underwear-4.jpg'
@@ -112,12 +112,12 @@ class Home extends Component {
         <div className={'row half-wrap'}>
           <div className="carousel-wrapper half small-img">
             <Carousel {...settings}>
-              <img src={Socks6} />
-              <img src={Socks2} />
               <img src={Socks1} />
+              <img src={Socks2} />
               <img src={Socks3} />
               <img src={Socks4} />
               <img src={Socks5} />
+              <img src={Socks6} />
               <img src={Socks7} />
               <img src={Socks8} />
             </Carousel>
@@ -140,8 +140,8 @@ class Home extends Component {
         </div>
 
         <div className={'store-shot-row'}>
-          <img src={StoreShot2} />
           <img src={StoreShot1} />
+          <img src={StoreShot2} />
         </div>
 
         <div className={'address-row'}>
@@ -166,7 +166,7 @@ class Home extends Component {
             </Textfit>
           </div>
           <div className="map-wrap">
-            <GoogleMap />
+            {/*<GoogleMap />*/}
           </div>
         </div>
 
@@ -174,7 +174,7 @@ class Home extends Component {
           <img src={Line} />
         </div>
 
-        <InstafeedComponent />
+        {/*<InstafeedComponent />*/}
 
         <div className={'line'}>
           <img src={Line} />
