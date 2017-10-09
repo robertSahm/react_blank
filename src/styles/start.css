@@ -25,6 +25,10 @@ ul {
   display: block;
   width: 100%;
   padding: 0 4% 4%;
+  @media (--tablet-down) {
+    margin: 0;
+    padding: 0;
+  }
 
   & img {
     width: 100%;

@@ -1,16 +1,16 @@
 @import 'media-queries.css';
 
 .header-wrap {
-  width: 100%;
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 
   & .logo-wrap {
-    margin: 30px auto 0 auto;
-    max-width: 377px;
-
     @media (--phone) {
-      padding: 0 15px;
+      max-width: 85%;
     }
+
 
     & img {
       width: 100%;

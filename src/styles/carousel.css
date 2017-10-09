@@ -8,9 +8,12 @@
 
 .carousel-wrapper {
   lost-utility: clearfix;
-  /* margin-bottom: 40px; */
+  padding: 0 30px;
   max-width: 1200px;
   margin: 0 auto 40px auto;
+  @media (--tablet-down) {
+    padding: 0;
+  }
 
   &.third {
     lost-column: 1/3;

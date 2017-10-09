@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Textfit } from 'react-textfit'
-import LogoFooter from "../img/logo-footer.svg"
+import AddressBox from './address-box'
+import LogoFooter from '../img/logo-footer.svg'
 import '../styles/footer.css'
 import '../styles/typography.css'
 // import '../styles/home.css'
@@ -24,29 +24,11 @@ class Footer extends Component {
           <img className={''} src={LogoFooter} />
         </div>
 
-        <div className={'address-row'}>
-          <div className={'address-box'}>
-            <Textfit mode="single">
-              <span className={'text-gold'}>3109 M ST NW</span>
-            </Textfit>
-            <Textfit mode="single">
-              <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
-            </Textfit>
-            <Textfit mode="single">
-               <span className={'text-light-green'}>(202) 333-4213</span>
-             </Textfit>
-            <Textfit mode="single">
-               <span className={'text-dark-green'}>MON-TH 10am - 7:30pm</span>
-             </Textfit>
-             <Textfit mode="single">
-               <span className={'text-dark-brown lighten'}>FRI-SAT 10am - 8:30pm</span>
-             </Textfit>
-            <Textfit mode="single">
-              <span className={'text-dark-brown'}>SUNDAY 11am - 6pm</span>
-            </Textfit>
-          </div>
+        <div className={'address-row'} >
+          <AddressBox />
         </div>
-        <h5 className={'copyright text-gold'}>coppyright © 2017 Trunk and Drawer LLC</h5>
+
+        <h5 className={'copyright text-gold'}>coppyright © 2017 Momentum Retail LLC</h5>
       </div>
     )
   }
