@@ -1,1 +1,0 @@
-webpackJsonp([2],{497:function(e,t,a){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var c=a(0),n=function(e){return e&&e.__esModule?e:{default:e}}(c),u=(a(25),function(){return n.default.createElement("div",{className:"col-12"},n.default.createElement("h3",{className:"text-center"},"Socks"))});t.default=u}});

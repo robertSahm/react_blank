@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import mapMarker from '../img/map-marker.svg'
-
 import { compose, withProps } from "recompose";
 import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
 import demoFancyMapStyles from "./demoFancyMapStyles.json";
+import mapMarker from '../img/map-marker.svg'
 
 const StyledMapWithAnInfoBox = compose (
   withProps({
@@ -32,7 +31,7 @@ const StyledMapWithAnInfoBox = compose (
         margin: '0',
         padding: '0px'
       }}>
-        <img src={mapMarker} />
+        <img className={'map-marker'} src={mapMarker} />
       </div>
     </InfoBox>
   </GoogleMap>
