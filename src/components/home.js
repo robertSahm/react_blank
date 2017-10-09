@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router-dom'
 import { Textfit } from 'react-textfit'
-// import GoogleMap from './googlemap'
+import GoogleMap from './googlemap'
 import LogoFull from '../img/LogoFull.svg'
-// import InstafeedComponent from './instafeed'
+import InstafeedComponent from './instafeed'
 
 // Carousel
 import Carousel from './react-responsive-carousel/carousel';
@@ -48,8 +48,6 @@ import Acc6 from '../img/accessories/acc-6.jpg'
 import Acc7 from '../img/accessories/acc-7.jpg'
 import Acc8 from '../img/accessories/acc-8.jpg'
 import Acc9 from '../img/accessories/acc-9.jpg'
-
-// Lifestyle
 
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
@@ -166,7 +164,7 @@ class Home extends Component {
             </Textfit>
           </div>
           <div className="map-wrap">
-            {/*<GoogleMap />*/}
+            <GoogleMap />
           </div>
         </div>
 
@@ -174,7 +172,7 @@ class Home extends Component {
           <img src={Line} />
         </div>
 
-        {/*<InstafeedComponent />*/}
+        <InstafeedComponent />
 
         <div className={'line'}>
           <img src={Line} />
