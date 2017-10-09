@@ -18,13 +18,13 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _cssClasses = require('../cssClasses');
+var _cssClasses = require('./cssClasses');
 
 var _cssClasses2 = _interopRequireDefault(_cssClasses);
 
-var _dimensions = require('../dimensions');
+var _dimensions = require('./dimensions');
 
-var _CSSTranslate = require('../CSSTranslate');
+var _CSSTranslate = require('./CSSTranslate');
 
 var _CSSTranslate2 = _interopRequireDefault(_CSSTranslate);
 

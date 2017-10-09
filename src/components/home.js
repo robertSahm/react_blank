@@ -6,7 +6,7 @@ import LogoFull from '../img/LogoFull.svg'
 // import InstafeedComponent from './instafeed'
 
 // Carousel
-import { Carousel } from './react-responsive-carousel';
+import Carousel from './react-responsive-carousel/carousel';
 import styles from '../styles/carousel.css'
 
 // Images
