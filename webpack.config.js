@@ -92,7 +92,7 @@ module.exports = {
 		concat,
 		uglify,
 		setProd,
-		BundleAnalyzerPlugin,
+		// BundleAnalyzerPlugin,
 
 	], // plugins
 	watch: true,
