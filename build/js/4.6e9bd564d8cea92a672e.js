@@ -1,2 +1,0 @@
-webpackJsonp([4],{141:function(e,t,c){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a=c(0),n=function(e){return e&&e.__esModule?e:{default:e}}(a);c(4),t.default=function(){return n.default.createElement("div",{className:"col-12"},n.default.createElement("h3",{className:"text-center"},"Accessories"))}}});
-//# sourceMappingURL=4.6e9bd564d8cea92a672e.js.map

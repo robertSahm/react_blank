@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import Home from "./components/home"
 
 class LoadingComponent extends Component {
+
 	constructor(props) {
 		super(props);
 		this.state = {loaded: false, module: null};
