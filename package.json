@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf build",
-    "build": "npm run clean && NODE_ENV=production webpack -p",
     "server": "webpack-dev-server",
-    "production": "NODE_ENV=production node server.js"
+    "production": "NODE_ENV=production node server.js",
+    "clean": "rimraf build",
+    "build": "npm run clean && NODE_ENV=production webpack -p"
   },
   "author": {
     "name": "Robby Sahm",

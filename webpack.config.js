@@ -86,11 +86,11 @@ module.exports = {
 	}, // module
 	// plugins
 	plugins: [
+		uglify,
 		myHtmlPlugin,
 		chunkPlugin,
 		removeObsolete,
 		concat,
-		uglify,
 		setProd,
 		// BundleAnalyzerPlugin,
 
