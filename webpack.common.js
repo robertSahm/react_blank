@@ -1,14 +1,11 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var chunkPlugin = new webpack.optimize.CommonsChunkPlugin({
-  names: ["vendors", "manifest"],
-  filename: 'js/vendors.[chunkhash].js',
-  minChunks (module) {
-    return module.context && module.context.indexOf('node_modules') >= 0;
-  },
+  name: "manifest",
+  minChunks: Infinity
 });
 
 module.exports = {
@@ -46,6 +43,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Production',
       template: "./src/template/index.html",
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common' // Specify the common bundle's name.
     })
   ],
 

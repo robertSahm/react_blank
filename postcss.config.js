@@ -2,8 +2,17 @@ module.exports = {
   // parser: 'sugarss',
   plugins: {
     'postcss-import': {},
-    'postcss-cssnext': {},
-    'cssnano': { preset: 'default' },
+    'postcss-cssnext': {
+      'features': {
+        'autoprefixer': false
+      }
+    },
+    'cssnano': {
+      "preset": [
+        "default",
+        {'discardComments': {'removeAll': true}}
+      ]
+    },
     'lost': {},
     'postcss-simple-vars': {}
   }
