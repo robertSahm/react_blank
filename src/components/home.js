@@ -1,9 +1,10 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router-dom'
-import { Textfit } from 'react-textfit'
-import GoogleMap from './googlemap'
 import LogoFull from '../img/LogoFull.svg'
 import InstafeedComponent from './instafeed'
+import AddressBox from './address-box'
+import GoogleMap from './googlemap'
+import '../styles/address-box.css'
 
 // Carousel
 import Carousel from './react-responsive-carousel/carousel';
@@ -142,27 +143,8 @@ class Home extends Component {
           <img src={StoreShot2} />
         </div>
 
-        <div className={'address-row'}>
-          <div className={'address-box'}>
-            <Textfit mode="single">
-              <span className={'text-gold'}>3109 M ST NW</span>
-            </Textfit>
-            <Textfit mode="single">
-              <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
-            </Textfit>
-            <Textfit mode="single">
-               <span className={'text-light-green'}>(202) 333-4213</span>
-             </Textfit>
-            <Textfit mode="single">
-               <span className={'text-dark-green'}>MON-TH | 10 am - 7:30 pm</span>
-             </Textfit>
-             <Textfit mode="single">
-               <span className={'text-dark-brown lighten'}>FRI-SAT | 10 am - 8:30 pm</span>
-             </Textfit>
-            <Textfit mode="single">
-              <span className={'text-dark-brown'}>SUNDAY | 11 am - 6 pm</span>
-            </Textfit>
-          </div>
+        <div className={'address-row'} >
+          <AddressBox />
           <div className="map-wrap">
             <GoogleMap />
           </div>

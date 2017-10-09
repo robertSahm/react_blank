@@ -13,48 +13,6 @@ ul {
   list-style-type: none;
 }
 
-.address-row {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 40px;
-
-  @media (--laptop-up) {
-    margin: 40px auto;
-    max-width: 1200px;
-  }
-
-  & .address-box {
-    width: 20%;
-    @media (--tablet) {
-      width: 50%;
-      margin-bottom: 40px;
-    }
-    @media (--phone) {
-      width: 80%;
-      margin-bottom: 40px;
-    }
-  }
-
-  & .map-wrap {
-    width: 75%;
-    @media (--tablet-down) {
-      width: 100%;
-    }
-
-    & .infoBox {
-      overflow: visible !important;
-
-      & .map-marker {
-        display: block;
-        margin-left: -50%;
-        margin-top: -100%;
-      }
-    }
-  }
-}
-
 .row {
   lost-utility: clearfix;
 }
