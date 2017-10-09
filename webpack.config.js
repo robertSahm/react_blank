@@ -1,60 +1,79 @@
 var webpack = require("webpack");
 var path = require("path");
-var htmlPlugin = require("html-webpack-plugin");
+var htmlWebpackPlugin = require("html-webpack-plugin");
 var CleanObsolete = require("webpack-clean-obsolete-chunks");
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-// HTML plugin config
-
-var myHtmlPlugin = new htmlPlugin({
-	template: "./src/template/index.html"
+var myHtmlPlugin = new htmlWebpackPlugin({
+	template: "./src/template/index.html",
 });
 
-// commons chunk plugin
 var chunkPlugin = new webpack.optimize.CommonsChunkPlugin({
-	names: ["vendors", "manifest"]
+	name: "vendors",
+	filename: 'js/vendors.[chunkhash].js',
+	minChunks (module) {
+		return module.context && module.context.indexOf('node_modules') >= 0;
+  },
 });
 
 // remove obsolete chunks after a re-compile while watching the files
 var removeObsolete = new CleanObsolete({ verbose: false });
 
-var stringify = new webpack.DefinePlugin({
+var setProd = new webpack.DefinePlugin({
 	'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 })
 
-const VENDORS = [
+var VENDORS = [
 	"react", "react-dom", "react-router-dom", "lodash"
 ];
 
+var concat = new webpack.optimize.ModuleConcatenationPlugin()
+
+var BundleAnalyzerPlugin = new BundleAnalyzerPlugin()
+
+var uglify = new webpack.optimize.UglifyJsPlugin({
+	mangle: true,
+  sourceMap: true,   // enable source maps to map errors (stack traces) to modules
+  compress: {
+    warnings: false, // Suppress uglification warnings
+    pure_getters: true,
+    unsafe: true,
+    unsafe_comps: true,
+    screw_ie8: true
+  },
+  output: {
+    comments: false, // remove all comments
+  },
+  exclude: [/\.min\.js$/gi] // skip pre-minified libs
+});
+
+///////////////////////////////////////////////////
+
 module.exports = {
+	devtool: "source-map",
 	entry: {
 		app: "./src/app.js",
 		vendors: VENDORS
 	},
 	output: {
-		// set the output path. absolute path relative to the system/server
-		// use node's path
 		path: path.join( __dirname, "build" ),
 		filename: "js/[name].[chunkhash].js",
 		publicPath: ""
 	},
-	devtool: "inline-source-map",
-	// loaders
 	module: {
 		rules: [
-			// babel
 			{
 				use: "babel-loader",
 				test: /\.js$/,
 				exclude: /node_modules/
 			},
-			// images
-		{
-			test: /\.(png|svg|jpg|gif)$/,
-			loader: 'file-loader',
-			options: {
-				outputPath: 'img/'
-			}
-		},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				loader: 'file-loader',
+				options: {
+					outputPath: 'img/'
+				}
+			},
 			{
 				test: /\.css$/,
         use: [
@@ -69,8 +88,12 @@ module.exports = {
 	plugins: [
 		myHtmlPlugin,
 		chunkPlugin,
-		stringify,
-		removeObsolete
+		removeObsolete,
+		concat,
+		uglify,
+		setProd,
+		BundleAnalyzerPlugin,
+
 	], // plugins
 	watch: true,
 	watchOptions: {
