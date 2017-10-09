@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
-    "build": "npm run clean && webpack",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
     "server": "webpack-dev-server",
     "production": "NODE_ENV=production node server.js"
   },
@@ -16,8 +16,6 @@
   "dependencies": {
     "express": "^4.15.5",
     "lodash": "^4.17.4",
-    "nodemailer": "^4.1.3",
-    "nuka-carousel": "^2.3.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-google-maps": "^8.3.0",
@@ -49,9 +47,9 @@
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
+    "postcss-responsive-font": "^1.0.3",
     "postcss-simple-vars": "^4.1.0",
     "react-responsive-carousel": "^3.1.25",
-    "postcss-responsive-font": "^1.0.3",
     "rimraf": "^2.6.2",
     "style-loader": "^0.18.2",
     "sugarss": "^1.0.0",

@@ -17,6 +17,10 @@ var chunkPlugin = new webpack.optimize.CommonsChunkPlugin({
 // remove obsolete chunks after a re-compile while watching the files
 var removeObsolete = new CleanObsolete({ verbose: false });
 
+var stringify = new webpack.DefinePlugin({
+	'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+})
+
 const VENDORS = [
 	"react", "react-dom", "react-router-dom", "lodash"
 ];
@@ -33,7 +37,7 @@ module.exports = {
 		filename: "js/[name].[chunkhash].js",
 		publicPath: ""
 	},
-	devtool: "source-map",
+	devtool: "inline-source-map",
 	// loaders
 	module: {
 		rules: [
@@ -65,6 +69,7 @@ module.exports = {
 	plugins: [
 		myHtmlPlugin,
 		chunkPlugin,
+		stringify,
 		removeObsolete
 	], // plugins
 	watch: true,

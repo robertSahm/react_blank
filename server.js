@@ -5,7 +5,7 @@ const path = require ('path');
 const app = express();
 
 // server routes can go here...
-app.get('./hello', (req, res) => res.send({ hi: 'there' }));
+// app.get('./hello', (req, res) => res.send({ hi: 'there' }));
 
 if (process.env.NODE_ENV !== 'production') {
   app.use(webpackMiddleware(webpack(webpackConfig)));
