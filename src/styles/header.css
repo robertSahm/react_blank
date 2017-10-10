@@ -11,9 +11,14 @@
       max-width: 85%;
     }
 
+    & svg {
+      display: inline-block;
+      border: 1px solid red;
+    }
 
     & img {
       width: 100%;
+      display: inline-block;
     }
   }
 }
