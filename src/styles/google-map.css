@@ -1,0 +1,18 @@
+@import 'media-queries.css';
+
+.map-wrap {
+  width: 70%;
+  @media (--tablet-down) {
+    width: 100%;
+  }
+
+  & .infoBox {
+    overflow: visible !important;
+
+    & .map-marker {
+      display: block;
+      margin-left: -50%;
+      margin-top: -100%;
+    }
+  }
+}
