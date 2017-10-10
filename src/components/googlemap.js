@@ -29,7 +29,8 @@ const StyledMapWithAnInfoBox = compose (
         backgroundColor: `transparent`,
         opacity: '1',
         margin: '0',
-        padding: '0px'
+        padding: '0',
+        border: '1px solid red'
       }}>
         <img className={'map-marker'} src={mapMarker} />
       </div>

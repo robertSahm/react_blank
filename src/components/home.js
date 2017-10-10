@@ -5,6 +5,7 @@ import InstafeedComponent from './instafeed'
 import AddressBox from './address-box'
 import GoogleMap from './googlemap'
 import '../styles/address-box.css'
+import '../styles/google-map.css'
 
 // Carousel
 import Carousel from './react-responsive-carousel/carousel';
