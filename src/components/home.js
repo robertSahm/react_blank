@@ -138,7 +138,7 @@ class Home extends Component {
         <div className={'address-row'} >
           <AddressBox />
           <div className={'map-wrap'}>
-            {/*<GoogleMap />*/}
+            <GoogleMap />
           </div>
         </div>
 
