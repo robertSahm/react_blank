@@ -5,7 +5,6 @@ import './styles/start.css'
 import './styles/typography.css'
 import './styles/header.css'
 import './styles/nav.css'
-import ReactGA from 'react-ga';
 
 // get header
 import Header from './components/header'
@@ -15,13 +14,12 @@ import Nav from './components/nav'
 import Routes from './routes'
 // import footer
 import Footer from './components/footer'
+import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-107914187-1', {
-  debug: false,
+  debug: true,
   titleCase: false,
-  gaOptions: {
-
-  }
+  gaOptions: {}
 });
 
 const App = () =>
