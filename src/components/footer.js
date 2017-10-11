@@ -4,7 +4,8 @@ import AddressBox from './address-box'
 import LogoFooter from '../img/logo-footer.svg'
 import '../styles/footer.css'
 import '../styles/typography.css'
-// import '../styles/home.css'
+import facebookLogo from '../img/logo-facebook.png'
+import instaLogo from '../img/logo-instagram.svg'
 
 class Footer extends Component {
   render() {
@@ -18,6 +19,11 @@ class Footer extends Component {
           <Link className={'menu-item'} to='/lounge'>SLEEPWEAR&nbsp;&amp;&nbsp;LOUNGEWEAR</Link>
           <Link className={'menu-item'} to='/socks'>SOCKS</Link>
           <Link className={'menu-item'} to='/accessories'>TRAVEL ACCESSORIES</Link>
+        </div>
+
+        <div className={'social-wrap'}>
+          <img src={facebookLogo} />
+          <img src={instaLogo} />
         </div>
 
         <div className={'footer-logo-wrap'}>

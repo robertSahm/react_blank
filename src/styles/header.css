@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  min-height: 110px;
 
   & .logo-wrap {
     @media (--phone) {
@@ -22,20 +23,3 @@
     }
   }
 }
-
-
-/* .logo-full-img {
-  display: block;
-  lost-center: center;
-  width: 377px;
-  margin-top: 30px;
-
-  & img {
-    width: 100%;
-    display: block;
-  }
-
-  @media (--phone) {
-    margin: 30px 10px;
-  }
-} */

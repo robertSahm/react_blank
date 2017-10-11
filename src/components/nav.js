@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import Dropdown from './dropdown'
 import { CSSTransitionGroup } from 'react-transition-group'
+import facebookLogo from '../img/logo-facebook.png'
+import instaLogo from '../img/logo-instagram.svg'
 
 class Nav extends Component {
 	constructor(props) {
@@ -54,7 +56,11 @@ class Nav extends Component {
 					<div className="link-wrap">
 						<Link className={'menu-item'} to='/contact' onClick={(e) => this.closeDropdown(e)}>CONTACT</Link>
 					</div>
-				</div>
+          <div className={'social-wrap'}>
+            <img src={facebookLogo} />
+            <img src={instaLogo} />
+          </div>
+        </div>
 			</div>
 		);
 	}

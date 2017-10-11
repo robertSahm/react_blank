@@ -7,6 +7,17 @@
   justify-content: center;
   margin: 15px auto 25px;
   position: relative;
+  padding: 0 40px;
+  max-width: 1200px;
+  @media (--tablet-down) {
+    padding: 0;
+  }
+
+  @media (width <= 630px) {
+    margin-bottom: 70px;
+  }
+
+
   @media (--phone) {
     justify-content: space-around;
   }
@@ -76,5 +87,26 @@
   transition: opacity 300ms ease;
 }
 
+.social-wrap {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 30px;
+  top: -10px;
+
+  @media (width <= 630px) {
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 35px;
+  }
+
+  & img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 3px 0;
+  }
+}
 
 
