@@ -22,8 +22,12 @@ class Footer extends Component {
         </div>
 
         <div className={'social-wrap'}>
-          <img src={facebookLogo} />
-          <img src={instaLogo} />
+          <a target="_blank" href="https://www.facebook.com/trunkanddrawer/">
+            <img src={facebookLogo}/>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/trunkanddrawer/">
+            <img src={instaLogo} />
+          </a>
         </div>
 
         <div className={'footer-logo-wrap'}>
