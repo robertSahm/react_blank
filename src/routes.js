@@ -3,14 +3,6 @@ import { Route } from 'react-router-dom'
 import Home from './components/home'
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-107914187-npm run1', {
-  debug: true,
-  titleCase: false,
-  gaOptions: {
-
-  }
-});
-
 class LoadingComponent extends Component {
 	constructor(props) {
 		super(props);
