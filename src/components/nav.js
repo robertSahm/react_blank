@@ -57,8 +57,12 @@ class Nav extends Component {
 						<Link className={'menu-item'} to='/contact' onClick={(e) => this.closeDropdown(e)}>CONTACT</Link>
 					</div>
           <div className={'social-wrap'}>
-            <img src={facebookLogo} />
-            <img src={instaLogo} />
+            <a target="_blank" href="https://www.facebook.com/trunkanddrawer/">
+              <img src={facebookLogo}/>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/trunkanddrawer/">
+              <img src={instaLogo} />
+            </a>
           </div>
         </div>
 			</div>
