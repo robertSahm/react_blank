@@ -12,6 +12,10 @@
       max-width: 1500px;
     }
 
+    @media (--phone) {
+      padding: 0 5px;
+    }
+
     & .img-wrap {
       lost-column: 1/2;
       @media (--laptop-down) {
@@ -24,7 +28,6 @@
         display: block;
         margin-bottom: 30px;
         @media (--laptop-down) {
-          width: 90%;
           margin: 10px auto;
         }
       }

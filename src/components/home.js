@@ -6,31 +6,26 @@ import AddressBox from './address-box'
 import GoogleMap from './googlemap'
 import '../styles/address-box.css'
 import '../styles/google-map.css'
-
 // Carousel
 import Carousel from './react-responsive-carousel/carousel';
 import styles from '../styles/carousel.css'
-
 // Images
   // General Page Images
 import ArrowLeft from '../img/arrow-left.svg'
 import ArrowRight from '../img/arrow-right.svg'
 import HandLine from '../img/hand-line.svg'
 import Line from '../img/line.svg'
-
   // Underwear
 import Underwear1 from '../img/underwear/underwear-1.jpg'
 import Underwear2 from '../img/underwear/underwear-2.jpg'
 import Underwear3 from '../img/underwear/underwear-3.jpg'
 import Underwear4 from '../img/underwear/underwear-4.jpg'
 import Underwear5 from '../img/underwear/underwear-5.jpg'
-
-// Loungewear
+  // Loungewear
 import Lounge1 from '../img/loungewear/lounge-1.jpg'
 import Lounge2 from '../img/loungewear/lounge-2.jpg'
 import Lounge3 from '../img/loungewear/lounge-3.jpg'
-
-// Socks
+  // Socks
 import Socks1 from '../img/socks/socks-1.jpg'
 import Socks2 from '../img/socks/socks-2.jpg'
 import Socks3 from '../img/socks/socks-3.jpg'
@@ -39,8 +34,7 @@ import Socks5 from '../img/socks/socks-5.jpg'
 import Socks6 from '../img/socks/socks-6.jpg'
 import Socks7 from '../img/socks/socks-7.jpg'
 import Socks8 from '../img/socks/socks-8.jpg'
-
-// TravAcccessories
+  // Travel Acccessories
 import Acc1 from '../img/accessories/acc-1.jpg'
 import Acc2 from '../img/accessories/acc-2.jpg'
 import Acc3 from '../img/accessories/acc-3.jpg'
@@ -50,17 +44,14 @@ import Acc6 from '../img/accessories/acc-6.jpg'
 import Acc7 from '../img/accessories/acc-7.jpg'
 import Acc8 from '../img/accessories/acc-8.jpg'
 import Acc9 from '../img/accessories/acc-9.jpg'
-
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
 import LogoRow2 from '../img/logos/logo-row-2.png'
 import LogoRow3 from '../img/logos/logo-row-3.png'
 import LogoRow4 from '../img/logos/logo-row-4.png'
-
-// Store Shots
+  // Store Shots
 import StoreShot1 from '../img/store/store-1.jpg'
 import StoreShot2 from '../img/store/store-2.jpg'
-
 
 const CreateLink = (props) => {
   const {path, to, text} = props;
@@ -75,7 +66,6 @@ const CreateLink = (props) => {
   );
 };
 
-
 class Home extends Component {
   render() {
     const settings = {
@@ -89,7 +79,7 @@ class Home extends Component {
     return (
       <div className='content-home'>
 
-        <div className="carousel-wrapper edge-pad">
+        <div className={'carousel-wrapper edge-pad'}>
           <Carousel {...settings}>
             <img src={Underwear1} />
             <img src={Underwear2} />
@@ -100,7 +90,7 @@ class Home extends Component {
           <CreateLink path={pathname} to='/underwear' text='UNDERWEAR' />
         </div>
 
-        <div className="carousel-wrapper edge-pad">
+        <div className={'carousel-wrapper edge-pad'}>
           <Carousel {...settings}>
             <img src={Lounge1} />
             <img src={Lounge2} />
@@ -109,8 +99,8 @@ class Home extends Component {
           <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
         </div>
 
-        <div className={'row half-wrap'}>
-          <div className="carousel-wrapper half small-img">
+        <div className={'carousel-wrapper half-wrap'}>
+          <div className={'half small-img'}>
             <Carousel {...settings}>
               <img src={Socks1} />
               <img src={Socks2} />
@@ -123,7 +113,8 @@ class Home extends Component {
             </Carousel>
             <CreateLink path={pathname} to='/socks' text='SOCKS' />
           </div>
-          <div className="carousel-wrapper half small-img">
+
+          <div className={'half small-img'}>
             <Carousel {...settings}>
               <img src={Acc2} />
               <img src={Acc1} />
@@ -146,8 +137,8 @@ class Home extends Component {
 
         <div className={'address-row'} >
           <AddressBox />
-          <div className="map-wrap">
-            <GoogleMap />
+          <div className={'map-wrap'}>
+            {/*<GoogleMap />*/}
           </div>
         </div>
 
@@ -161,7 +152,7 @@ class Home extends Component {
           <img src={Line} />
         </div>
 
-        <div className="logo-carousel">
+        <div className={'logo-carousel'}>
           <img src={LogoRow1} />
           <img src={LogoRow2} />
           <img src={LogoRow3} />

@@ -15,14 +15,6 @@ import Routes from './routes'
 // import footer
 import Footer from './components/footer'
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Development Mode');
-};
-
-if (process.env.NODE_ENV == 'production') {
-  console.log('Production Mode');
-};
-
 const App = () =>
 	<Router>
 		<div>
