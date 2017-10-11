@@ -1,0 +1,46 @@
+@import 'colors.css';
+@import 'media-queries.css';
+
+.socks-wrap {
+
+  & .images-wrap {
+    lost-utility: clearfix;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @media (--desktop) {
+      max-width: 1000px;
+    }
+
+    @media (--phone) {
+      padding: 0 5px;
+    }
+
+    & .img-wrap {
+      lost-column: 1/2;
+
+      &.third {
+        /* lost-column: 1/3; */
+      }
+      @media (--laptop-down) {
+        lost-column: 1;
+      }
+
+      & img {
+        height: auto;
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        @media (--laptop-down) {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+  & .line {
+    margin-top: 40px;
+    @media (--phone) {
+      max-width: 350px;
+    }
+  }
+}

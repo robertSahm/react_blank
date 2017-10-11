@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-import { Textfit } from 'react-textfit'
-import GoogleMap from './googlemap'
 import Line from '../img/line.svg'
 import '../styles/underwear-page.css'
-import '../styles/typography.css'
 // images
 import Underwear1 from '../img/underwear-page/und-page-1.jpg'
 import Underwear2 from '../img/underwear-page/und-page-2.jpg'
