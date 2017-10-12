@@ -13,8 +13,8 @@ class Footer extends Component {
       <div className={'footer-wrap'}>
 
         <div className={'footer-nav-wrap'}>
-          <Link className={'menu-item'} to='/home'>HOME</Link>
-          <Link className={'menu-item'} to='/home'>CONTACT</Link>
+          <Link className={'menu-item'} to='/'>HOME</Link>
+          <Link className={'menu-item'} to='/contact'>CONTACT</Link>
           <Link className={'menu-item'} to='/underwear'>UNDERWEAR</Link>
           <Link className={'menu-item'} to='/lounge'>SLEEPWEAR&nbsp;&amp;&nbsp;LOUNGEWEAR</Link>
           <Link className={'menu-item'} to='/socks'>SOCKS</Link>
