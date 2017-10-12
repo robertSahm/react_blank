@@ -2,11 +2,10 @@
 @import 'media-queries.css';
 
 .underwear-wrap {
-
   & .images-wrap {
     lost-utility: clearfix;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     padding: 0 30px;
     @media (--desktop) {
       max-width: 1200px;
@@ -33,8 +32,9 @@
       }
     }
   }
+
   & .line {
-    margin-top: 40px;
+    margin-top: 30px;
     @media (--phone) {
       max-width: 350px;
     }

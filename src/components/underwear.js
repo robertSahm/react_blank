@@ -10,11 +10,21 @@ import Underwear5 from '../img/underwear-page/und-page-5.jpg'
 import Underwear6 from '../img/underwear-page/und-page-6.jpg'
 
 class Underwear extends Component {
-
-
   render() {
     return (
       <div className={'underwear-wrap'}>
+        <div className={'page-header'} >
+          <h1>Underwear</h1>
+          <p>Trunk and Drawer features a broad selection of men's briefs, trunks, boxer briefs and boxers in a variety of brands and materials, curated for superior luxury and comfort.
+          </p>
+          <p>
+            <span>Brands:</span><br/>
+            2UNDR, Derek Rose, Hanro, HOM, MyPakage, Saxx, SPANX, Tani, Tommy John, Wood
+           </p>
+        </div>
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
         <div className={'images-wrap'}>
           <div className={'img-wrap'}>
             <img src={Underwear1} />

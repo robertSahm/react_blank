@@ -22,8 +22,20 @@ class Accessories extends Component {
   render() {
     return (
       <div className={'accessories-wrap'}>
-        <div className={'images-wrap'}>
+        <div className={'page-header'} >
+          <h1>Sleepwear and Loungewear</h1>
+          <p>Trunk and Drawer carries the finest handcrafted leather goods and umbrellas carefully constructed for the worldly traveler and professional gentleman.
+          </p>
+          <p>
+            <span>Brands:</span><br/>
+            Ettinger, Hook + Albert, Pasotti
+           </p>
+        </div>
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
 
+        <div className={'images-wrap'}>
           <div className={'img-row three'}>
             <div className={'img-wrap'}>
               <img src={Acc2} />

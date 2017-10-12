@@ -15,6 +15,18 @@ class Loungewear extends Component {
   render() {
     return (
       <div className={'loungewear-wrap'}>
+        <div className={'page-header'} >
+          <h1>Sleepwear and Loungewear</h1>
+          <p>Our comprehensive sleepwear and loungewear collection includes loungewear separates and sets, robes, pajamas, and tee shirts in an array of luxurious materials such as MicroModal, silk, and plush wool blends.
+          </p>
+          <p>
+            <span>Brands:</span><br/>
+            Derek Rose, Hanro, HOM, MyPakage, Robert Graham, Sleepy Jones, Tani, Tommy John, Wood
+           </p>
+        </div>
+        <div className={'line'}>
+          <img src={Line} />
+        </div>
         <div className={'images-wrap'}>
           <div className={'img-wrap'}>
             <img src={Lounge7} />

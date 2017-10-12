@@ -4,7 +4,7 @@
 .insta-header-wrap {
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin: 40px 0 0 0;
 
   & h1 {
     font-weight: 200;
