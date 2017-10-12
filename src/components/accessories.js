@@ -23,12 +23,12 @@ class Accessories extends Component {
     return (
       <div className={'accessories-wrap'}>
         <div className={'page-header'} >
-          <h1>Sleepwear and Loungewear</h1>
+          <h1>Travel Accessories</h1>
           <p>Trunk and Drawer carries the finest handcrafted leather goods and umbrellas carefully constructed for the worldly traveler and professional gentleman.
           </p>
           <p>
             <span>Brands:</span><br/>
-            Ettinger, Hook + Albert, Pasotti
+            Ettinger, Hook & Albert, Pasotti
            </p>
         </div>
         <div className={'line'}>
