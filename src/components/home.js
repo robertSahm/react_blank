@@ -123,7 +123,6 @@ class Home extends Component {
               <img src={Acc5} />
               <img src={Acc6} />
               <img src={Acc7} />
-              <img src={Acc8} />
               <img src={Acc9} />
             </Carousel>
             <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
