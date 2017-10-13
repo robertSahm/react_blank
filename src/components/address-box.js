@@ -12,8 +12,8 @@ class AddressBox extends Component {
           <span className={'text-light-brown'}>WASHINGTON, DC 20007</span>
         </Textfit>
         <Textfit mode="single">
-           <span className={'text-light-green'}>(202) 333-4213</span>
-         </Textfit>
+          <span className={'text-light-green'}>(202) 333-4213</span>
+        </Textfit>
         <Textfit mode="single">
           <span className={'text-dark-green'}>MON-TH | 10:30 am - 7:30 pm</span>
         </Textfit>
