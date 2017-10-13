@@ -96,7 +96,7 @@ class Home extends Component {
             <img src={Lounge2} />
             <img src={Lounge3} />
           </Carousel>
-          <CreateLink path={pathname} to='/loungewear' text='SLEEP AND LOUNGEWEAR' />
+          <CreateLink path={pathname} to='/lounge' text='SLEEP AND LOUNGEWEAR' />
         </div>
 
         <div className={'carousel-wrapper half-wrap'}>
