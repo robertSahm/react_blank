@@ -33,7 +33,9 @@ import Socks4 from '../img/socks/socks-4.jpg'
 import Socks5 from '../img/socks/socks-5.jpg'
 import Socks6 from '../img/socks/socks-6.jpg'
 import Socks7 from '../img/socks/socks-7.jpg'
-import Socks8 from '../img/socks/socks-8.jpg'
+// import Socks8 from '../img/socks/socks-8.jpg'
+import Socks9 from '../img/socks/socks-9.jpg'
+import Socks10 from '../img/socks/socks-10.jpg'
   // Travel Acccessories
 import Acc1 from '../img/accessories/acc-1.jpg'
 import Acc2 from '../img/accessories/acc-2.jpg'
@@ -103,13 +105,15 @@ class Home extends Component {
           <div className={'half small-img'}>
             <Carousel {...settings}>
               <img src={Socks1} />
+              <img src={Socks9} />
+              <img src={Socks10} />
               <img src={Socks2} />
               <img src={Socks3} />
               <img src={Socks4} />
               <img src={Socks5} />
               <img src={Socks6} />
               <img src={Socks7} />
-              <img src={Socks8} />
+              {/*<img src={Socks8} />*/}
             </Carousel>
             <CreateLink path={pathname} to='/socks' text='SOCKS' />
           </div>
