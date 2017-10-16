@@ -8,6 +8,8 @@ import Underwear3 from '../img/underwear-page/und-page-3.jpg'
 import Underwear4 from '../img/underwear-page/und-page-4.jpg'
 import Underwear5 from '../img/underwear-page/und-page-5.jpg'
 import Underwear6 from '../img/underwear-page/und-page-6.jpg'
+import Underwear7 from '../img/underwear-page/und-page-7.jpg'
+import Underwear8 from '../img/underwear-page/und-page-8.jpg'
 
 class Underwear extends Component {
   render() {
@@ -43,6 +45,12 @@ class Underwear extends Component {
           </div>
           <div className={'img-wrap'}>
             <img src={Underwear6} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Underwear7} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Underwear8} />
           </div>
         </div>
         <div className={'line'}>

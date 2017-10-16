@@ -10,6 +10,8 @@ import Lounge5 from '../img/loungewear-page/lounge5.jpg'
 import Lounge6 from '../img/loungewear-page/lounge6.jpg'
 import Lounge7 from '../img/loungewear-page/lounge7.jpg'
 import Lounge8 from '../img/loungewear-page/lounge8.jpg'
+import Lounge9 from '../img/loungewear-page/lounge9.jpg'
+import Lounge10 from '../img/loungewear-page/lounge10.jpg'
 
 class Loungewear extends Component {
   render() {
@@ -51,6 +53,12 @@ class Loungewear extends Component {
           </div>
           <div className={'img-wrap'}>
             <img src={Lounge4} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Lounge9} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Lounge10} />
           </div>
         </div>
         <div className={'line'}>
