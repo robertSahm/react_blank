@@ -17,7 +17,6 @@
     margin-bottom: 70px;
   }
 
-
   @media (--phone) {
     justify-content: space-around;
   }

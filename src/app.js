@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { CSSTransitionGroup } from 'react-transition-group'
 import './styles/start.css'
 import './styles/typography.css'
 import './styles/header.css'
@@ -17,7 +18,7 @@ import Footer from './components/footer'
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-107914187-1', {
-  debug: true,
+  debug: false,
   titleCase: false,
   gaOptions: {}
 });

@@ -13,7 +13,9 @@ class LoadingComponent extends Component {
 	componentDidMount(props) {
 		this.props.routePromise.then(module => {
 			// do stuff when route is loaded
-			this.setState({ loaded: true, module: module.default });
+			setTimeout(()=>{
+				this.setState({ loaded: true, module: module.default });
+			}, 0);
 		});
 	}
 
@@ -31,47 +33,68 @@ class LoadingComponent extends Component {
 		ReactGA.pageview(page);
   }
 
-
 	render() {
 		const isLoaded = this.state.loaded;
 
 		if ( this.state.loaded ) {
-			return <this.state.module {...this.props} />
+			return (
+				 <this.state.module {...this.props} />
+			)
 		} else {
-			return <div></div>
+
+			return (
+				<div className={'loading-wrapper'}>
+					<h1 className={'loading-div text-center'}>LOADING</h1>
+				</div>
+			)
 		}
 	}
 }
 
+/*
+If routes-wrapper 1st child class exists, start fade in
+
+
+
+
+*/
+
 const Routes = () =>
-	<div>
+	<div className={'routes-wrapper'}>
+
 		<Route exact path="/" component={Home} />
+
 		<Route path="/underwear" component={props =>
-			<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "underwear"*/"./components/underwear")} />
+			<LoadingComponent {...props}
+			routePromise={import(/*webpackChunkName: "underwear"*/"./components/underwear")} />
 			}
 		/>
 
 		<Route path="/lounge"
 			component={props =>
-				<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "lounge"*/"./components/lounge")} />
+				<LoadingComponent {...props}
+				routePromise={import(/*webpackChunkName: "lounge"*/"./components/lounge")} />
 			}
 		/>
 
 		<Route path="/socks"
 			component={props =>
-				<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "socks"*/"./components/socks")} />
+				<LoadingComponent {...props}
+				routePromise={import(/*webpackChunkName: "socks"*/"./components/socks")} />
 			}
 		/>
 
 		<Route path="/accessories"
 			component={props =>
-				<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "accessories"*/"./components/accessories")} />
+				<LoadingComponent {...props}
+				routePromise={import(/*webpackChunkName: "accessories"*/"./components/accessories")} />
 			}
 		/>
 
 		<Route path="/contact"
 			component={props =>
-				<LoadingComponent {...props} routePromise={import(/*webpackChunkName: "contact"*/"./components/contact")} />
+				<LoadingComponent {...props}
+				routePromise={import(/*webpackChunkName: "contact"*/"./components/contact")} />
 			}
 		/>
 

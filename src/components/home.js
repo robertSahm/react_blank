@@ -26,16 +26,15 @@ import Lounge1 from '../img/loungewear/lounge-1.jpg'
 import Lounge2 from '../img/loungewear/lounge-2.jpg'
 import Lounge3 from '../img/loungewear/lounge-3.jpg'
   // Socks
-import Socks1 from '../img/socks/socks-1.jpg'
-import Socks2 from '../img/socks/socks-2.jpg'
-import Socks3 from '../img/socks/socks-3.jpg'
-import Socks4 from '../img/socks/socks-4.jpg'
-import Socks5 from '../img/socks/socks-5.jpg'
-import Socks6 from '../img/socks/socks-6.jpg'
-import Socks7 from '../img/socks/socks-7.jpg'
-// import Socks8 from '../img/socks/socks-8.jpg'
-import Socks9 from '../img/socks/socks-9.jpg'
-import Socks10 from '../img/socks/socks-10.jpg'
+import Socks1 from '../img/socks-slider/socks-1.jpg'
+import Socks2 from '../img/socks-slider/socks-2.jpg'
+import Socks3 from '../img/socks-slider/socks-3.jpg'
+import Socks5 from '../img/socks-slider/socks-5.jpg'
+import Socks6 from '../img/socks-slider/socks-6.jpg'
+import Socks7 from '../img/socks-slider/socks-7.jpg'
+import Socks9 from '../img/socks-slider/socks-9.jpg'
+import Socks10 from '../img/socks-slider/socks-10.jpg'
+import Socks11 from '../img/socks-slider/socks-11.jpg'
   // Travel Acccessories
 import Acc1 from '../img/accessories/acc-1.jpg'
 import Acc2 from '../img/accessories/acc-2.jpg'
@@ -107,13 +106,12 @@ class Home extends Component {
               <img src={Socks1} />
               <img src={Socks9} />
               <img src={Socks10} />
+              <img src={Socks11} />
               <img src={Socks2} />
               <img src={Socks3} />
-              <img src={Socks4} />
               <img src={Socks5} />
               <img src={Socks6} />
               <img src={Socks7} />
-              {/*<img src={Socks8} />*/}
             </Carousel>
             <CreateLink path={pathname} to='/socks' text='SOCKS' />
           </div>

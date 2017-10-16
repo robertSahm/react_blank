@@ -16,7 +16,6 @@ class Dropdown extends Component {
     this.setState({
       pathname: this.props.pathname
     })
-    console.log(this.props.location)
   }
 
   toggleDropdown() {
@@ -24,13 +23,6 @@ class Dropdown extends Component {
       hidden: !prevState.hidden
     }));
   }
-
-  // closeDropdown() {
-  //   if(this.state.pathname) {
-  //     this.setState({ hidden: true })
-  //   }
-  // }
-
 
   render() {
     return (

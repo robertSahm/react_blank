@@ -9,9 +9,17 @@ import Socks4 from '../img/socks-page/socks4.jpg'
 import Socks5 from '../img/socks-page/socks5.jpg'
 import Socks6 from '../img/socks-page/socks6.jpg'
 import Socks7 from '../img/socks-page/socks7.jpg'
-import Socks8 from '../img/socks-page/socks8.jpg'
 import Socks9 from '../img/socks-page/socks9.jpg'
 import Socks10 from '../img/socks-page/socks10.jpg'
+import Socks11 from '../img/socks-page/socks11.jpg'
+import Socks12 from '../img/socks-page/socks12.jpg'
+import Socks13 from '../img/socks-page/socks13.jpg'
+import Socks14 from '../img/socks-page/socks14.jpg'
+import Socks15 from '../img/socks-page/socks15.jpg'
+import Socks16 from '../img/socks-page/socks16.jpg'
+import Socks17 from '../img/socks-page/socks17.jpg'
+import Socks18 from '../img/socks-page/socks18.jpg'
+import Socks19 from '../img/socks-page/socks19.jpg'
 
 class Socks extends Component {
   render() {
@@ -35,10 +43,10 @@ class Socks extends Component {
 
           <div className={'img-row four'}>
             <div className={'img-wrap'}>
-              <img src={Socks1} />
+              <img src={Socks2} />
             </div>
             <div className={'img-wrap'}>
-              <img src={Socks2} />
+              <img src={Socks1} />
             </div>
             <div className={'img-wrap'}>
               <img src={Socks3} />
@@ -48,13 +56,21 @@ class Socks extends Component {
             </div>
           </div>
 
-
           <div className={'img-row three'}>
             <div className={'img-wrap'}>
-              <img src={Socks5} />
+              <img src={Socks6} />
             </div>
             <div className={'img-wrap'}>
-              <img src={Socks6} />
+              <img src={Socks9} />
+            </div>
+            <div className={'img-wrap'}>
+              <img src={Socks10} />
+            </div>
+          </div>
+
+          <div className={'img-row two'}>
+            <div className={'img-wrap'}>
+              <img src={Socks5} />
             </div>
             <div className={'img-wrap'}>
               <img src={Socks7} />
@@ -63,18 +79,38 @@ class Socks extends Component {
 
           <div className={'img-row three'}>
             <div className={'img-wrap'}>
-              <img src={Socks8} />
+              <img src={Socks12} />
             </div>
             <div className={'img-wrap'}>
-              <img src={Socks9} />
+              <img src={Socks13} />
             </div>
             <div className={'img-wrap'}>
-              <img src={Socks10} />
+              <img src={Socks14} />
             </div>
-
           </div>
-        </div>
 
+          <div className={'img-row three'}>
+            <div className={'img-wrap'}>
+              <img src={Socks16} />
+            </div>
+            <div className={'img-wrap'}>
+              <img src={Socks17} />
+            </div>
+            <div className={'img-wrap'}>
+              <img src={Socks19} />
+            </div>
+          </div>
+
+          <div className={'img-row two'}>
+            <div className={'img-wrap'}>
+              <img src={Socks15} />
+            </div>
+            <div className={'img-wrap'}>
+              <img src={Socks18} />
+            </div>
+          </div>
+
+        </div>
         <div className={'line'}>
           <img src={Line} />
         </div>
