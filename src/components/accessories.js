@@ -36,65 +36,37 @@ class Accessories extends Component {
         </div>
 
         <div className={'images-wrap'}>
-          <div className={'img-row three'}>
-            <div className={'img-wrap'}>
-              <img src={Acc2} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc1} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc3} />
-            </div>
+
+          <div className={'img-row'}>
+            <img className={'three'} src={Acc2} />
+            <img className={'three'} src={Acc1} />
+            <img className={'three'} src={Acc3} />
           </div>
 
-
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Acc5} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc4} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Acc5} />
+            <img className={'two'} src={Acc4} />
           </div>
 
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Acc6} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc7} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Acc6} />
+            <img className={'two'} src={Acc7} />
           </div>
 
-          <div className={'img-row three'}>
-            <div className={'img-wrap'}>
-              <img src={Acc8} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc9} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc10} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'three'} src={Acc8} />
+            <img className={'three'} src={Acc9} />
+            <img className={'three'} src={Acc10} />
           </div>
 
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Acc12} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc13} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Acc12} />
+            <img className={'two'} src={Acc13} />
           </div>
 
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Acc14} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Acc15} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Acc14} />
+            <img className={'two'} src={Acc15} />
           </div>
 
         </div>

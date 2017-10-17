@@ -3,9 +3,9 @@
 @lost flexbox flex;
 
 .socks-wrap {
-
   & .images-wrap {
-  lost-center: 1200px;
+    lost-center: 1200px;
+
     & .img-row {
       margin: 0 10px 30px 10px;
       @media (--tablet-down) {
