@@ -44,7 +44,7 @@ class LoadingComponent extends Component {
 
 			return (
 				<div className={'loading-wrapper'}>
-					<h1 className={'loading-div text-center'}>LOADING</h1>
+					<h1 className={'loading-div text-center'}></h1>
 				</div>
 			)
 		}
