@@ -15,6 +15,7 @@ import Nav from './components/nav'
 import Routes from './routes'
 // import footer
 import Footer from './components/footer'
+// import Google Analytics
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-107914187-1', {

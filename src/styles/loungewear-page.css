@@ -1,5 +1,6 @@
 @import 'colors.css';
 @import 'media-queries.css';
+@lost flexbox flex;
 
 .loungewear-wrap {
   & .images-wrap {
