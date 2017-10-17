@@ -22,8 +22,8 @@
 
       & img {
         object-fit: contain;
-        max-height: 500px;
-        max-width: 500px;
+        max-height: 520px;
+        max-width: 520px;
         padding: 10px;
         @media (--laptop-down) {
           margin: 10px auto;

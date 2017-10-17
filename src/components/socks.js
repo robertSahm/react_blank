@@ -41,75 +41,40 @@ class Socks extends Component {
 
         <div className={'images-wrap'}>
 
-          <div className={'img-row four'}>
-            <div className={'img-wrap'}>
-              <img src={Socks2} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks1} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks3} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks4} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'four'} src={Socks2} />
+            <img className={'four'} src={Socks1} />
+            <img className={'four'} src={Socks3} />
+            <img className={'four'} src={Socks4} />
           </div>
 
-          <div className={'img-row three'}>
-            <div className={'img-wrap'}>
-              <img src={Socks6} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks9} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks10} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'three'} src={Socks6} />
+            <img className={'three'} src={Socks9} />
+            <img className={'three'} src={Socks10} />
           </div>
 
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Socks5} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks7} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Socks5} />
+            <img className={'two'} src={Socks7} />
           </div>
 
-          <div className={'img-row three'}>
-            <div className={'img-wrap'}>
-              <img src={Socks12} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks13} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks14} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'three'} src={Socks12} />
+            <img className={'three'} src={Socks13} />
+            <img className={'three'} src={Socks14} />
           </div>
 
-          <div className={'img-row three'}>
-            <div className={'img-wrap'}>
-              <img src={Socks16} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks17} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks19} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'three'} src={Socks16} />
+            <img className={'three'} src={Socks17} />
+            <img className={'three'} src={Socks19} />
           </div>
 
-          <div className={'img-row two'}>
-            <div className={'img-wrap'}>
-              <img src={Socks15} />
-            </div>
-            <div className={'img-wrap'}>
-              <img src={Socks18} />
-            </div>
+          <div className={'img-row'}>
+            <img className={'two'} src={Socks15} />
+            <img className={'two'} src={Socks18} />
           </div>
-
         </div>
         <div className={'line'}>
           <img src={Line} />
