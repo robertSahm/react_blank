@@ -1,20 +1,19 @@
 @import 'colors.css';
 @import 'media-queries.css';
+@lost flexbox flex;
 
 .carousel-wrapper {
   lost-utility: clearfix;
   padding: 0 30px;
   max-width: 1200px;
   margin: 0 auto 40px auto;
+
   @media (--tablet-down) {
     padding: 0;
   }
 
   &.half-wrap {
-    lost-utility: clearfix;
-    padding: 0 30px;
-    max-width: 1200px;
-    margin: 0 auto 40px auto;
+    lost-center: 1200px;
   }
 
   & .half {
