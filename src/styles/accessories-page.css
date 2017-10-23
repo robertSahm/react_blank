@@ -8,6 +8,10 @@
 
     & .img-row {
       margin: 0 10px 30px 10px;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+
       @media (--tablet-down) {
         margin: 0;
       }

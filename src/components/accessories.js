@@ -17,6 +17,9 @@ import Acc12 from '../img/accessories-page/acc12.jpg'
 import Acc13 from '../img/accessories-page/acc13.jpg'
 import Acc14 from '../img/accessories-page/acc14.jpg'
 import Acc15 from '../img/accessories-page/acc15.jpg'
+import Acc16 from '../img/accessories-page/acc16.jpg'
+import Acc17 from '../img/accessories-page/acc17.jpg'
+import Acc18 from '../img/accessories-page/acc18.jpg'
 
 class Accessories extends Component {
   render() {
@@ -67,6 +70,12 @@ class Accessories extends Component {
           <div className={'img-row'}>
             <img className={'two'} src={Acc14} />
             <img className={'two'} src={Acc15} />
+          </div>
+
+          <div className={'img-row'}>
+            <img className={'three'} src={Acc16} />
+            <img className={'three'} src={Acc17} />
+            <img className={'three'} src={Acc18} />
           </div>
 
         </div>

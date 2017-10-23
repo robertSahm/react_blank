@@ -45,6 +45,8 @@ import Acc6 from '../img/accessories/acc-6.jpg'
 import Acc7 from '../img/accessories/acc-7.jpg'
 import Acc8 from '../img/accessories/acc-8.jpg'
 import Acc9 from '../img/accessories/acc-9.jpg'
+import Acc10 from '../img/accessories/acc-10.jpg'
+import Acc11 from '../img/accessories/acc-11.jpg'
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
 import LogoRow2 from '../img/logos/logo-row-2.png'
@@ -126,6 +128,8 @@ class Home extends Component {
               <img src={Acc6} />
               <img src={Acc7} />
               <img src={Acc9} />
+              <img src={Acc10} />
+              <img src={Acc11} />
             </Carousel>
             <CreateLink path={pathname} to='/accessories' text='TRAVEL ACCESSORIES' />
           </div>
