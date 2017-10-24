@@ -6,8 +6,6 @@ import Acc1 from '../img/accessories-page/acc1.jpg'
 import Acc2 from '../img/accessories-page/acc2.jpg'
 import Acc3 from '../img/accessories-page/acc3.jpg'
 import Acc4 from '../img/accessories-page/acc4.jpg'
-import Acc5 from '../img/accessories-page/acc5.jpg'
-import Acc6 from '../img/accessories-page/acc6.jpg'
 import Acc7 from '../img/accessories-page/acc7.jpg'
 import Acc8 from '../img/accessories-page/acc8.jpg'
 import Acc9 from '../img/accessories-page/acc9.jpg'
@@ -16,10 +14,11 @@ import Acc11 from '../img/accessories-page/acc11.jpg'
 import Acc12 from '../img/accessories-page/acc12.jpg'
 import Acc13 from '../img/accessories-page/acc13.jpg'
 import Acc14 from '../img/accessories-page/acc14.jpg'
-import Acc15 from '../img/accessories-page/acc15.jpg'
 import Acc16 from '../img/accessories-page/acc16.jpg'
 import Acc17 from '../img/accessories-page/acc17.jpg'
 import Acc18 from '../img/accessories-page/acc18.jpg'
+import Acc19 from '../img/accessories-page/acc19.jpg'
+import Acc20 from '../img/accessories-page/acc20.jpg'
 
 class Accessories extends Component {
   render() {
@@ -47,12 +46,12 @@ class Accessories extends Component {
           </div>
 
           <div className={'img-row'}>
-            <img className={'two'} src={Acc5} />
+            <img className={'two'} src={Acc19} />
             <img className={'two'} src={Acc4} />
           </div>
 
           <div className={'img-row'}>
-            <img className={'two'} src={Acc6} />
+            <img className={'two'} src={Acc20} />
             <img className={'two'} src={Acc7} />
           </div>
 
@@ -64,12 +63,13 @@ class Accessories extends Component {
 
           <div className={'img-row'}>
             <img className={'two'} src={Acc12} />
-            <img className={'two'} src={Acc13} />
+            <img className={'two'} src={Acc14} />
           </div>
 
           <div className={'img-row'}>
-            <img className={'two'} src={Acc14} />
-            <img className={'two'} src={Acc15} />
+            <img className={'two'} src={Acc19} />
+            <img className={'two'} src={Acc20} />
+            {/*<img className={'two'} src={Acc15} />*/}
           </div>
 
           <div className={'img-row'}>

@@ -31,16 +31,16 @@ class Underwear extends Component {
         </div>
         <div className={'images-wrap'}>
           <div className={'img-wrap'}>
+            <img src={Underwear9} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Underwear10} />
+          </div>
+          <div className={'img-wrap'}>
             <img src={Underwear1} />
           </div>
           <div className={'img-wrap'}>
             <img src={Underwear2} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Underwear3} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Underwear4} />
           </div>
           <div className={'img-wrap'}>
             <img src={Underwear5} />
@@ -55,10 +55,10 @@ class Underwear extends Component {
             <img src={Underwear8} />
           </div>
           <div className={'img-wrap'}>
-            <img src={Underwear9} />
+            <img src={Underwear3} />
           </div>
           <div className={'img-wrap'}>
-            <img src={Underwear10} />
+            <img src={Underwear4} />
           </div>
         </div>
         <div className={'line'}>

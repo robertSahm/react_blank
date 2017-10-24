@@ -30,36 +30,43 @@ class Loungewear extends Component {
           <img src={Line} />
         </div>
         <div className={'images-wrap'}>
+
           <div className={'img-wrap'}>
             <img src={Lounge7} />
           </div>
           <div className={'img-wrap'}>
             <img src={Lounge8} />
           </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge3} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge1} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge2} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge6} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge5} />
-          </div>
-          <div className={'img-wrap'}>
-            <img src={Lounge4} />
-          </div>
+
           <div className={'img-wrap'}>
             <img src={Lounge9} />
           </div>
           <div className={'img-wrap'}>
             <img src={Lounge10} />
           </div>
+
+          <div className={'img-wrap'}>
+            <img src={Lounge5} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Lounge6} />
+          </div>
+
+          <div className={'img-wrap'}>
+            <img src={Lounge2} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Lounge4} />
+          </div>
+
+          <div className={'img-wrap'}>
+            <img src={Lounge3} />
+          </div>
+          <div className={'img-wrap'}>
+            <img src={Lounge1} />
+          </div>
+
+
         </div>
         <div className={'line'}>
           <img src={Line} />

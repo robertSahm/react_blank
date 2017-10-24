@@ -38,15 +38,14 @@ import Socks11 from '../img/socks-slider/socks-11.jpg'
   // Travel Acccessories
 import Acc1 from '../img/accessories/acc-1.jpg'
 import Acc2 from '../img/accessories/acc-2.jpg'
-import Acc3 from '../img/accessories/acc-3.jpg'
+import Acc11 from '../img/accessories/acc-11.jpg'
 import Acc4 from '../img/accessories/acc-4.jpg'
-import Acc5 from '../img/accessories/acc-5.jpg'
-import Acc6 from '../img/accessories/acc-6.jpg'
 import Acc7 from '../img/accessories/acc-7.jpg'
 import Acc8 from '../img/accessories/acc-8.jpg'
 import Acc9 from '../img/accessories/acc-9.jpg'
 import Acc10 from '../img/accessories/acc-10.jpg'
-import Acc11 from '../img/accessories/acc-11.jpg'
+import Acc3 from '../img/accessories/acc-3.jpg'
+import Acc12 from '../img/accessories/acc-12.jpg'
   // Logos
 import LogoRow1 from '../img/logos/logo-row-1.png'
 import LogoRow2 from '../img/logos/logo-row-2.png'
@@ -105,15 +104,15 @@ class Home extends Component {
         <div className={'carousel-wrapper half-wrap'}>
           <div className={'half small-img'}>
             <Carousel {...settings}>
-              <img src={Socks1} />
+              <img src={Socks11} />
               <img src={Socks9} />
               <img src={Socks10} />
-              <img src={Socks11} />
-              <img src={Socks2} />
+              <img src={Socks1} />
+              <img src={Socks7} />
               <img src={Socks3} />
               <img src={Socks5} />
               <img src={Socks6} />
-              <img src={Socks7} />
+              <img src={Socks2} />
             </Carousel>
             <CreateLink path={pathname} to='/socks' text='SOCKS' />
           </div>
@@ -122,12 +121,11 @@ class Home extends Component {
             <Carousel {...settings}>
               <img src={Acc2} />
               <img src={Acc1} />
-              <img src={Acc3} />
-              <img src={Acc4} />
-              <img src={Acc5} />
-              <img src={Acc6} />
-              <img src={Acc7} />
               <img src={Acc9} />
+              <img src={Acc4} />
+              <img src={Acc12} />
+              <img src={Acc7} />
+              <img src={Acc3} />
               <img src={Acc10} />
               <img src={Acc11} />
             </Carousel>
