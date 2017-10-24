@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import Dropdown from './dropdown'
 import { CSSTransitionGroup } from 'react-transition-group'
-import facebookLogo from '../img/logo-facebook.png'
+import facebookLogo from '../img/logo-facebook.svg'
 import instaLogo from '../img/logo-instagram.svg'
 
 class Nav extends Component {
@@ -58,7 +58,7 @@ class Nav extends Component {
 					</div>
           <div className={'social-wrap'}>
             <a target="_blank" href="https://www.facebook.com/trunkanddrawer/">
-              <img src={facebookLogo}/>
+              <img className={'fb-logo'} src={facebookLogo}/>
             </a>
             <a target="_blank" href="https://www.instagram.com/trunkanddrawer/">
               <img src={instaLogo} />

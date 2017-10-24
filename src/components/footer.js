@@ -4,7 +4,7 @@ import AddressBox from './address-box'
 import LogoFooter from '../img/logo-footer.svg'
 import '../styles/footer.css'
 import '../styles/typography.css'
-import facebookLogo from '../img/logo-facebook.png'
+import facebookLogo from '../img/logo-facebook.svg'
 import instaLogo from '../img/logo-instagram.svg'
 
 class Footer extends Component {
@@ -21,17 +21,17 @@ class Footer extends Component {
           <Link className={'menu-item'} to='/accessories'>TRAVEL ACCESSORIES</Link>
         </div>
 
+        <div className={'footer-logo-wrap'}>
+          <img className={''} src={LogoFooter} />
+        </div>
+
         <div className={'social-wrap'}>
           <a target="_blank" href="https://www.facebook.com/trunkanddrawer/">
-            <img src={facebookLogo}/>
+            <img className={'fb-logo'} src={facebookLogo}/>
           </a>
           <a target="_blank" href="https://www.instagram.com/trunkanddrawer/">
             <img src={instaLogo} />
           </a>
-        </div>
-
-        <div className={'footer-logo-wrap'}>
-          <img className={''} src={LogoFooter} />
         </div>
 
         <div className={'address-row'} >
