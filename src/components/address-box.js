@@ -15,13 +15,16 @@ class AddressBox extends Component {
           <span className={'text-light-green'}>(202) 333-4213</span>
         </Textfit>
         <Textfit mode="single">
-          <span className={'text-dark-green'}>MON-TH | 10:30 am - 7:30 pm</span>
+          <span className={'text-dark-green'}>TUE-TH | 10:30 am - 7:30 pm</span>
         </Textfit>
         <Textfit mode="single">
           <span className={'text-dark-brown lighten'}>FRI-SAT | 10:30 am - 8:30 pm</span>
         </Textfit>
         <Textfit mode="single">
           <span className={'text-dark-brown'}>SUNDAY | 11 am - 6 pm</span>
+        </Textfit>
+        <Textfit mode="single">
+          <span className={'text-dark-green'}>MONDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSED</span>
         </Textfit>
       </div>
     )

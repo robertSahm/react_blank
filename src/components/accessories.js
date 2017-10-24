@@ -6,6 +6,7 @@ import Acc1 from '../img/accessories-page/acc1.jpg'
 import Acc2 from '../img/accessories-page/acc2.jpg'
 import Acc3 from '../img/accessories-page/acc3.jpg'
 import Acc4 from '../img/accessories-page/acc4.jpg'
+import Acc5 from '../img/accessories-page/acc5.jpg'
 import Acc7 from '../img/accessories-page/acc7.jpg'
 import Acc8 from '../img/accessories-page/acc8.jpg'
 import Acc9 from '../img/accessories-page/acc9.jpg'
@@ -46,13 +47,8 @@ class Accessories extends Component {
           </div>
 
           <div className={'img-row'}>
-            <img className={'two'} src={Acc19} />
+            <img className={'two'} src={Acc5} />
             <img className={'two'} src={Acc4} />
-          </div>
-
-          <div className={'img-row'}>
-            <img className={'two'} src={Acc20} />
-            <img className={'two'} src={Acc7} />
           </div>
 
           <div className={'img-row'}>
