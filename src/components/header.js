@@ -1,13 +1,9 @@
 import React from 'react'
-import headerLogo from '../img/Logo.TrunkAndDrawer.svg'
-import LogoFull from '../img/LogoFull.svg'
 
 const Header = () => {
 	return(
 		<div className={'header-wrap'}>
-			<div className={'logo-wrap'}>
-				<img src={LogoFull} />
-			</div>
+      I'm the header!
 		</div>
 	);
 };

@@ -16,13 +16,16 @@ import Routes from './routes'
 // import footer
 import Footer from './components/footer'
 // import Google Analytics
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-107914187-1', {
-  debug: false,
-  titleCase: false,
-  gaOptions: {}
-});
+// ReactGA.initialize (
+//   // 'UA-107914187-1', // insert google analytics here
+//   {
+//     debug: false,
+//     titleCase: false,
+//     gaOptions: {}
+//   }
+// );
 
 const App = () =>
 	<Router>

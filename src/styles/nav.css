@@ -2,7 +2,6 @@
 @import 'media-queries.css';
 
 .nav-wrap {
-  font-family: 'Oswald';
   display: flex;
   justify-content: center;
   margin: 15px auto 25px;
@@ -84,34 +83,6 @@
 .dropmenu-leave.dropmenu-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease;
-}
-
-.social-wrap {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  align-items: center;
-  right: 30px;
-  top: -10px;
-
-  @media (width <= 630px) {
-    justify-content: center;
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: 35px;
-  }
-
-  & .fb-logo {
-    height: 28px;
-    align-self: center;
-    padding-right: 5px;
-  }
-
-  & img {
-    height: 30px;
-    margin: 5px 3px 0;
-  }
 }
 
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import Home from './components/home'
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
 class LoadingComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {loaded: false, module: null};
-		this.sendPageChange(props.location.pathname, props.location.search)
+		// this.sendPageChange(props.location.pathname, props.location.search)
 	}
 
 	componentDidMount(props) {
@@ -27,11 +27,11 @@ class LoadingComponent extends Component {
     }
   }
 
-  sendPageChange(pathname, search='') {
-		const page = pathname + search
-		ReactGA.set({page});
-		ReactGA.pageview(page);
-  }
+  // sendPageChange(pathname, search='') {
+		// const page = pathname + search
+		// ReactGA.set({page});
+		// ReactGA.pageview(page);
+  // }
 
 	render() {
 		const isLoaded = this.state.loaded;
@@ -56,37 +56,9 @@ const Routes = () =>
 
 		<Route exact path="/" component={Home} />
 
-		<Route path="/underwear" component={props =>
+		<Route path="/page_1" component={props =>
 			<LoadingComponent {...props}
-			routePromise={import(/*webpackChunkName: "underwear"*/"./components/underwear")} />
-			}
-		/>
-
-		<Route path="/lounge"
-			component={props =>
-				<LoadingComponent {...props}
-				routePromise={import(/*webpackChunkName: "lounge"*/"./components/lounge")} />
-			}
-		/>
-
-		<Route path="/socks"
-			component={props =>
-				<LoadingComponent {...props}
-				routePromise={import(/*webpackChunkName: "socks"*/"./components/socks")} />
-			}
-		/>
-
-		<Route path="/accessories"
-			component={props =>
-				<LoadingComponent {...props}
-				routePromise={import(/*webpackChunkName: "accessories"*/"./components/accessories")} />
-			}
-		/>
-
-		<Route path="/contact"
-			component={props =>
-				<LoadingComponent {...props}
-				routePromise={import(/*webpackChunkName: "contact"*/"./components/contact")} />
+			routePromise={import(/*webpackChunkName: "page_1"*/"./components/page_1")} />
 			}
 		/>
 
