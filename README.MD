@@ -1,4 +1,4 @@
-# Trunk and Drawer 1.0
+# Blank_React
 ###### Built with React, React Router V4, Webpack 3 with Code Splitting
 ---
 ##### Resources:
