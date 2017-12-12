@@ -21,7 +21,7 @@ $ npm run build
 $ NODE_ENV=production node server.js
 ```
 #### Push build to Heroku
-trunkanddrawer.herokuapp.com
+[app-name].herokuapp.com
 ```sh
 $ git push heroku master
 ```
