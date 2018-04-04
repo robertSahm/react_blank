@@ -21,7 +21,7 @@ class Home extends Component {
     return (
       <div className='content-home'>
 
-        <h1>Home!</h1>
+        <h1>Home!!!!</h1>
       </div>
     )
   }
